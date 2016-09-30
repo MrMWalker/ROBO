@@ -19,16 +19,16 @@
         <Line>PE_Const</Line>
         <Line>IO_Map</Line>
       </GenSharedModules>
-      <ShrdHeaderAge0>1228827923</ShrdHeaderAge0>
+      <ShrdHeaderAge0>1228828747</ShrdHeaderAge0>
       <ShrdCodeAge0>-1</ShrdCodeAge0>
       <ShrdAsemblAge0>-1</ShrdAsemblAge0>
-      <ShrdHeaderAge1>1228827923</ShrdHeaderAge1>
+      <ShrdHeaderAge1>1228828747</ShrdHeaderAge1>
       <ShrdCodeAge1>-1</ShrdCodeAge1>
       <ShrdAsemblAge1>-1</ShrdAsemblAge1>
-      <ShrdHeaderAge2>1228827923</ShrdHeaderAge2>
+      <ShrdHeaderAge2>1228828747</ShrdHeaderAge2>
       <ShrdCodeAge2>-1</ShrdCodeAge2>
       <ShrdAsemblAge2>-1</ShrdAsemblAge2>
-      <ShrdHeaderAge3>1228827923</ShrdHeaderAge3>
+      <ShrdHeaderAge3>1228828747</ShrdHeaderAge3>
       <ShrdCodeAge3>-1</ShrdCodeAge3>
       <ShrdAsemblAge3>-1</ShrdAsemblAge3>
       <GenExtraFiles lines_count="9">
@@ -44,10 +44,10 @@
       </GenExtraFiles>
       <GenExtraFileSrcDir7>lib\Kinetis\startup\</GenExtraFileSrcDir7>
       <GenExtraFileSrcDir3>Repositories\lib\doxygen\</GenExtraFileSrcDir3>
-      <XtraAge4>1228827923</XtraAge4>
-      <XtraAge5>1228827923</XtraAge5>
+      <XtraAge4>1228828747</XtraAge4>
+      <XtraAge5>1228828747</XtraAge5>
       <XtraAge7>1228751579</XtraAge7>
-      <XtraAge8>1228827923</XtraAge8>
+      <XtraAge8>1228828747</XtraAge8>
       <GenExtraFileType8>4</GenExtraFileType8>
       <GenExtraFileType7>5</GenExtraFileType7>
       <GenExtraFileType6>4</GenExtraFileType6>
@@ -396,7 +396,7 @@
     </GenFiles>
     <SignalListFile>Documentation\ROBO_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>89</ProjectModificationStamp>
+    <ProjectModificationStamp>90</ProjectModificationStamp>
   </Options>
   <CpuID_260>
     <Generated>true</Generated>
@@ -404,8 +404,8 @@
     <GenComponentVersion>01.014</GenComponentVersion>
     <GenDriverVersion>01.04</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1228827923</HeaderAge>
-    <CodeAge>1228827923</CodeAge>
+    <HeaderAge>1228828747</HeaderAge>
+    <CodeAge>1228828747</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>14</GenNumMethods>
     <SetClockConfiguration>false</SetClockConfiguration>
@@ -883,7 +883,7 @@
       <Main>false</Main>
       <SetOperationMode>false</SetOperationMode>
       <GetDriverState>false</GetDriverState>
-      <GenNumEvents>7</GenNumEvents>
+      <GenNumEvents>5</GenNumEvents>
       <OnBlockReceived_Selected>1</OnBlockReceived_Selected>
       <OnBlockReceived_Name>AS2_OnBlockReceived</OnBlockReceived_Name>
       <OnBlockReceived_Priority>interrupts disabled</OnBlockReceived_Priority>
@@ -899,12 +899,6 @@
       <OnTxComplete_Selected>1</OnTxComplete_Selected>
       <OnTxComplete_Name>AS2_OnTxComplete</OnTxComplete_Name>
       <OnTxComplete_Priority>interrupts disabled</OnTxComplete_Priority>
-      <OnIdle_Selected>1</OnIdle_Selected>
-      <OnIdle_Name>AS2_OnIdle</OnIdle_Name>
-      <OnIdle_Priority>interrupts disabled</OnIdle_Priority>
-      <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
-      <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
-      <OnRxActiveEdge_Priority>interrupts disabled</OnRxActiveEdge_Priority>
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1048,7 +1042,7 @@
       <HeaderAge>-1</HeaderAge>
       <CodeAge>-1</CodeAge>
       <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>43</GenNumMethods>
+      <GenNumMethods>24</GenNumMethods>
       <Enable>false</Enable>
       <Disable>false</Disable>
       <EnableEvent>false</EnableEvent>
@@ -1067,32 +1061,13 @@
       <GetError>false</GetError>
       <GetBreak>false</GetBreak>
       <SetBreak>false</SetBreak>
-      <SetBreak>false</SetBreak>
-      <SetAttentionMode>false</SetAttentionMode>
-      <SetRxBaudGenerator>false</SetRxBaudGenerator>
-      <SetTxBaudGenerator>false</SetTxBaudGenerator>
       <TurnTxOn>false</TurnTxOn>
       <TurnTxOff>false</TurnTxOff>
       <TurnRxOn>false</TurnRxOn>
       <TurnRxOff>false</TurnRxOff>
       <LoopMode>false</LoopMode>
-      <SetIdle>false</SetIdle>
-      <Standby>false</Standby>
-      <GetArbiterStatus>false</GetArbiterStatus>
-      <ResetArbiterCounter>false</ResetArbiterCounter>
-      <GetArbiterCounter>false</GetArbiterCounter>
-      <SetFallingEdgesMeasurement>false</SetFallingEdgesMeasurement>
-      <SetLowLevelMeasurement>false</SetLowLevelMeasurement>
-      <ClearArbiterFlags>false</ClearArbiterFlags>
-      <SetArbitrationMode>false</SetArbitrationMode>
-      <AdjustBaudRate>false</AdjustBaudRate>
-      <SetDirection>false</SetDirection>
       <ConnectPin>false</ConnectPin>
-      <GetRxIdle>false</GetRxIdle>
-      <GetTxComplete>false</GetTxComplete>
-      <EnableRxEdgeDetect>false</EnableRxEdgeDetect>
-      <DisableRxEdgeDetect>false</DisableRxEdgeDetect>
-      <GenNumEvents>12</GenNumEvents>
+      <GenNumEvents>10</GenNumEvents>
       <BeforeNewSpeed_Selected>1</BeforeNewSpeed_Selected>
       <BeforeNewSpeed_Name>AS2_BeforeNewSpeed</BeforeNewSpeed_Name>
       <BeforeNewSpeed_Priority>interrupts disabled</BeforeNewSpeed_Priority>
@@ -1120,15 +1095,9 @@
       <OnBreak_Selected>1</OnBreak_Selected>
       <OnBreak_Name>AS2_OnBreak</OnBreak_Name>
       <OnBreak_Priority>same as interrupt</OnBreak_Priority>
-      <OnIdle_Selected>1</OnIdle_Selected>
-      <OnIdle_Name>AS2_OnIdle</OnIdle_Name>
-      <OnIdle_Priority>same as interrupt</OnIdle_Priority>
       <OnTxComplete_Selected>1</OnTxComplete_Selected>
       <OnTxComplete_Name>AS2_OnTxComplete</OnTxComplete_Name>
       <OnTxComplete_Priority>same as interrupt</OnTxComplete_Priority>
-      <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
-      <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
-      <OnRxActiveEdge_Priority>same as interrupt</OnRxActiveEdge_Priority>
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1180,7 +1149,7 @@
         <Main>false</Main>
         <SetOperationMode>false</SetOperationMode>
         <GetDriverState>false</GetDriverState>
-        <GenNumEvents>7</GenNumEvents>
+        <GenNumEvents>5</GenNumEvents>
         <OnBlockReceived_Selected>1</OnBlockReceived_Selected>
         <OnBlockReceived_Name>AS2_OnBlockReceived</OnBlockReceived_Name>
         <OnBlockReceived_Priority>interrupts disabled</OnBlockReceived_Priority>
@@ -1196,12 +1165,6 @@
         <OnTxComplete_Selected>1</OnTxComplete_Selected>
         <OnTxComplete_Name>AS2_OnTxComplete</OnTxComplete_Name>
         <OnTxComplete_Priority>interrupts disabled</OnTxComplete_Priority>
-        <OnIdle_Selected>1</OnIdle_Selected>
-        <OnIdle_Name>AS2_OnIdle</OnIdle_Name>
-        <OnIdle_Priority>interrupts disabled</OnIdle_Priority>
-        <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
-        <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
-        <OnRxActiveEdge_Priority>interrupts disabled</OnRxActiveEdge_Priority>
         <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
         <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
         <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1528,7 +1491,7 @@
       <HeaderAge>-1</HeaderAge>
       <CodeAge>-1</CodeAge>
       <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>43</GenNumMethods>
+      <GenNumMethods>24</GenNumMethods>
       <Enable>false</Enable>
       <Disable>false</Disable>
       <EnableEvent>false</EnableEvent>
@@ -1547,32 +1510,13 @@
       <GetError>false</GetError>
       <GetBreak>false</GetBreak>
       <SetBreak>false</SetBreak>
-      <SetBreak>false</SetBreak>
-      <SetAttentionMode>false</SetAttentionMode>
-      <SetRxBaudGenerator>false</SetRxBaudGenerator>
-      <SetTxBaudGenerator>false</SetTxBaudGenerator>
       <TurnTxOn>false</TurnTxOn>
       <TurnTxOff>false</TurnTxOff>
       <TurnRxOn>false</TurnRxOn>
       <TurnRxOff>false</TurnRxOff>
       <LoopMode>false</LoopMode>
-      <SetIdle>false</SetIdle>
-      <Standby>false</Standby>
-      <GetArbiterStatus>false</GetArbiterStatus>
-      <ResetArbiterCounter>false</ResetArbiterCounter>
-      <GetArbiterCounter>false</GetArbiterCounter>
-      <SetFallingEdgesMeasurement>false</SetFallingEdgesMeasurement>
-      <SetLowLevelMeasurement>false</SetLowLevelMeasurement>
-      <ClearArbiterFlags>false</ClearArbiterFlags>
-      <SetArbitrationMode>false</SetArbitrationMode>
-      <AdjustBaudRate>false</AdjustBaudRate>
-      <SetDirection>false</SetDirection>
       <ConnectPin>false</ConnectPin>
-      <GetRxIdle>false</GetRxIdle>
-      <GetTxComplete>false</GetTxComplete>
-      <EnableRxEdgeDetect>false</EnableRxEdgeDetect>
-      <DisableRxEdgeDetect>false</DisableRxEdgeDetect>
-      <GenNumEvents>12</GenNumEvents>
+      <GenNumEvents>10</GenNumEvents>
       <BeforeNewSpeed_Selected>1</BeforeNewSpeed_Selected>
       <BeforeNewSpeed_Name>AS2_BeforeNewSpeed</BeforeNewSpeed_Name>
       <BeforeNewSpeed_Priority>interrupts disabled</BeforeNewSpeed_Priority>
@@ -1600,15 +1544,9 @@
       <OnBreak_Selected>1</OnBreak_Selected>
       <OnBreak_Name>AS2_OnBreak</OnBreak_Name>
       <OnBreak_Priority>same as interrupt</OnBreak_Priority>
-      <OnIdle_Selected>1</OnIdle_Selected>
-      <OnIdle_Name>AS2_OnIdle</OnIdle_Name>
-      <OnIdle_Priority>same as interrupt</OnIdle_Priority>
       <OnTxComplete_Selected>1</OnTxComplete_Selected>
       <OnTxComplete_Name>AS2_OnTxComplete</OnTxComplete_Name>
       <OnTxComplete_Priority>same as interrupt</OnTxComplete_Priority>
-      <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
-      <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
-      <OnRxActiveEdge_Priority>same as interrupt</OnRxActiveEdge_Priority>
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1660,7 +1598,7 @@
         <Main>false</Main>
         <SetOperationMode>false</SetOperationMode>
         <GetDriverState>false</GetDriverState>
-        <GenNumEvents>7</GenNumEvents>
+        <GenNumEvents>5</GenNumEvents>
         <OnBlockReceived_Selected>1</OnBlockReceived_Selected>
         <OnBlockReceived_Name>AS2_OnBlockReceived</OnBlockReceived_Name>
         <OnBlockReceived_Priority>interrupts disabled</OnBlockReceived_Priority>
@@ -1676,12 +1614,6 @@
         <OnTxComplete_Selected>1</OnTxComplete_Selected>
         <OnTxComplete_Name>AS2_OnTxComplete</OnTxComplete_Name>
         <OnTxComplete_Priority>interrupts disabled</OnTxComplete_Priority>
-        <OnIdle_Selected>1</OnIdle_Selected>
-        <OnIdle_Name>AS2_OnIdle</OnIdle_Name>
-        <OnIdle_Priority>interrupts disabled</OnIdle_Priority>
-        <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
-        <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
-        <OnRxActiveEdge_Priority>interrupts disabled</OnRxActiveEdge_Priority>
         <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
         <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
         <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -2732,14 +2664,13 @@
       <HeaderAge>-1</HeaderAge>
       <CodeAge>-1</CodeAge>
       <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>7</GenNumMethods>
+      <GenNumMethods>6</GenNumMethods>
       <Enable>false</Enable>
       <Disable>false</Disable>
       <EnableEvent>false</EnableEvent>
       <DisableEvent>false</DisableEvent>
       <Reset>false</Reset>
       <GetNumEvents>false</GetNumEvents>
-      <ConnectPin>false</ConnectPin>
       <GenNumEvents>1</GenNumEvents>
       <OnEnd_Selected>1</OnEnd_Selected>
       <OnEnd_Name>EC161_OnEnd</OnEnd_Name>
@@ -2759,7 +2690,7 @@
       <HeaderAge>-1</HeaderAge>
       <CodeAge>-1</CodeAge>
       <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>11</GenNumMethods>
+      <GenNumMethods>9</GenNumMethods>
       <GetDir>false</GetDir>
       <SetDir>false</SetDir>
       <SetInput>false</SetInput>
@@ -2769,8 +2700,6 @@
       <ClrVal>false</ClrVal>
       <SetVal>false</SetVal>
       <NegVal>false</NegVal>
-      <ConnectPin>false</ConnectPin>
-      <GetRawVal>false</GetRawVal>
       <GenNumEvents>0</GenNumEvents>
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
@@ -2932,14 +2861,13 @@
       <HeaderAge>-1</HeaderAge>
       <CodeAge>-1</CodeAge>
       <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>7</GenNumMethods>
+      <GenNumMethods>6</GenNumMethods>
       <Enable>false</Enable>
       <Disable>false</Disable>
       <EnableEvent>false</EnableEvent>
       <DisableEvent>false</DisableEvent>
       <Reset>false</Reset>
       <GetNumEvents>false</GetNumEvents>
-      <ConnectPin>false</ConnectPin>
       <GenNumEvents>1</GenNumEvents>
       <OnEnd_Selected>1</OnEnd_Selected>
       <OnEnd_Name>EC161_OnEnd</OnEnd_Name>
@@ -2959,7 +2887,7 @@
       <HeaderAge>-1</HeaderAge>
       <CodeAge>-1</CodeAge>
       <AsemblAge>-1</AsemblAge>
-      <GenNumMethods>11</GenNumMethods>
+      <GenNumMethods>9</GenNumMethods>
       <GetDir>false</GetDir>
       <SetDir>false</SetDir>
       <SetInput>false</SetInput>
@@ -2969,8 +2897,6 @@
       <ClrVal>false</ClrVal>
       <SetVal>false</SetVal>
       <NegVal>false</NegVal>
-      <ConnectPin>false</ConnectPin>
-      <GetRawVal>false</GetRawVal>
       <GenNumEvents>0</GenNumEvents>
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
@@ -3675,13 +3601,10 @@
       <GetVal>false</GetVal>
       <SetEdge>false</SetEdge>
       <ConnectPin>false</ConnectPin>
-      <GenNumEvents>2</GenNumEvents>
+      <GenNumEvents>1</GenNumEvents>
       <OnInterrupt_Selected>1</OnInterrupt_Selected>
       <OnInterrupt_Name>EInt1_OnInterrupt</OnInterrupt_Name>
       <OnInterrupt_Priority>same as interrupt</OnInterrupt_Priority>
-      <OnTriggerInterrupt_Selected>1</OnTriggerInterrupt_Selected>
-      <OnTriggerInterrupt_Name>EInt1_OnTriggerInterrupt</OnTriggerInterrupt_Name>
-      <OnTriggerInterrupt_Priority>interrupts disabled</OnTriggerInterrupt_Priority>
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -3724,8 +3647,8 @@
     <GenComponentVersion>01.032</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1228827923</HeaderAge>
-    <CodeAge>1228827923</CodeAge>
+    <HeaderAge>1228828747</HeaderAge>
+    <CodeAge>1228828747</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>10</GenNumMethods>
     <SoftwareReset>true</SoftwareReset>
@@ -4312,8 +4235,8 @@
     <GenComponentVersion>01.126</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1228827923</HeaderAge>
-    <CodeAge>1228827923</CodeAge>
+    <HeaderAge>1228828747</HeaderAge>
+    <CodeAge>1228828747</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>62</GenNumMethods>
     <strcpy>true</strcpy>
@@ -5273,8 +5196,8 @@
     <GenComponentVersion>01.069</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1228827923</HeaderAge>
-    <CodeAge>1228827923</CodeAge>
+    <HeaderAge>1228828747</HeaderAge>
+    <CodeAge>1228828747</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>8</GenNumMethods>
     <Wait10Cycles>true</Wait10Cycles>
@@ -5410,8 +5333,8 @@
     <GenComponentVersion>01.005</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1228827923</HeaderAge>
-    <CodeAge>1228827923</CodeAge>
+    <HeaderAge>1228828747</HeaderAge>
+    <CodeAge>1228828747</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>0</GenNumMethods>
     <GenNumEvents>0</GenNumEvents>
@@ -5427,8 +5350,8 @@
     <GenComponentVersion>01.010</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1228827923</HeaderAge>
-    <CodeAge>1228827923</CodeAge>
+    <HeaderAge>1228828747</HeaderAge>
+    <CodeAge>1228828747</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>1</GenNumMethods>
     <HardFaultHandler>true</HardFaultHandler>
@@ -5473,8 +5396,8 @@
     <GenComponentVersion>01.009</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1228827923</HeaderAge>
-    <CodeAge>1228827923</CodeAge>
+    <HeaderAge>1228828747</HeaderAge>
+    <CodeAge>1228828747</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <CriticalVariable>true</CriticalVariable>
