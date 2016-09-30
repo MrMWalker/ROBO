@@ -9,7 +9,18 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/PE_Types.h \
  C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/PE_Error.h \
  C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/PE_Const.h \
- C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/IO_Map.h
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/IO_Map.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/WAIT1.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/KSDK1.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/Cpu.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/CS1.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/HF1.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/KSDK1.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/UTIL1.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/KIN1.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/UTIL1.h \
+ ../../INTRO_Common/Application.h ../../INTRO_Common/Platform.h \
+ C:/Users/M&M/Documents/INTRO/ROBO/Sources/Platform_Local.h
 
 C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/Cpu.h:
 
@@ -32,3 +43,27 @@ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/PE_Error.h:
 C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/PE_Const.h:
 
 C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/IO_Map.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/WAIT1.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/KSDK1.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/Cpu.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/CS1.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/HF1.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/KSDK1.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/UTIL1.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/KIN1.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/UTIL1.h:
+
+../../INTRO_Common/Application.h:
+
+../../INTRO_Common/Platform.h:
+
+C:/Users/M&M/Documents/INTRO/ROBO/Sources/Platform_Local.h:

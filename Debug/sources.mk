@@ -2,6 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+ELF_SRCS := 
 O_SRCS := 
 CPP_SRCS := 
 C_UPPER_SRCS := 
@@ -12,6 +13,7 @@ ASM_SRCS :=
 CXX_SRCS := 
 C++_SRCS := 
 CC_SRCS := 
+SECONDARY_SIZE := 
 C++_DEPS := 
 OBJS := 
 C_DEPS := 
@@ -25,6 +27,7 @@ S_UPPER_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Sources \
+Sources/INTRO_Common \
 Project_Settings/Startup_Code \
 Generated_Code \
 

@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Sources/INTRO_Common/subdir.mk
 -include Sources/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
 -include Generated_Code/subdir.mk
@@ -44,24 +45,33 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
+SECONDARY_SIZE += \
+INTRO_Robot_Master.siz \
+
 
 # All Target
-all: ROBO.elf secondary-outputs
+all: INTRO_Robot_Master.elf secondary-outputs
 
 # Tool invocations
-ROBO.elf: $(OBJS) $(USER_OBJS)
+INTRO_Robot_Master.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/M&M/Documents/INTRO/ROBO/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/M&M/Documents/INTRO/ROBO/Project_Settings/Linker_Files" -Wl,-Map,"ROBO.map" -specs=nano.specs -specs=nosys.specs -o "ROBO.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/M&M/Documents/INTRO/ROBO/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/M&M/Documents/INTRO/ROBO/Project_Settings/Linker_Files" -Wl,-Map,"INTRO_Robot_Master.map" -specs=nano.specs -specs=nosys.specs -o "INTRO_Robot_Master.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
+	@echo ' '
+
+INTRO_Robot_Master.siz: INTRO_Robot_Master.elf
+	@echo 'Invoking: Cross ARM GNU Print Size'
+	arm-none-eabi-size --format=berkeley "INTRO_Robot_Master.elf"
+	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(ASM_DEPS)$(CC_DEPS)$(CPP_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS)$(S_UPPER_DEPS) ROBO.elf
+	-$(RM) $(SECONDARY_SIZE)$(C++_DEPS)$(OBJS)$(C_DEPS)$(ASM_DEPS)$(CC_DEPS)$(CPP_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS)$(S_UPPER_DEPS) INTRO_Robot_Master.elf
 	-@echo ' '
 
-secondary-outputs:
+secondary-outputs: $(SECONDARY_SIZE)
 
 .PHONY: all clean dependents
 .SECONDARY:
