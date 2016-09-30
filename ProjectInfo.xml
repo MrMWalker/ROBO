@@ -51,11 +51,15 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\BitIoLdd1.c</PathName>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\BitIoLdd2.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\CS1.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\HF1.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\KIN1.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\KSDK1.c</PathName>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\LEDPin1.c</PathName>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\LEDPin2.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\PE_LDD.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\UTIL1.c</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\Vectors.c</PathName>
@@ -94,12 +98,16 @@
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\BitIoLdd1.h</PathName>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\BitIoLdd2.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\CS1.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\HF1.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\KIN1.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\KSDK1.h</PathName>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\LEDPin1.h</PathName>
+      <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\LEDPin2.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\PE_Const.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\PE_Error.h</PathName>
       <PathName>C:\Users\M&M\Documents\INTRO\ROBO\Generated_Code\PE_LDD.h</PathName>

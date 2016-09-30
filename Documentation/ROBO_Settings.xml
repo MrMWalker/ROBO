@@ -124,31 +124,31 @@ PE_DEBUGHALT();
     </CompilerProperties>
   </CPU_Bean>
   <Bean name="LEDPin1" type="BitIO">
-    <Enabled v="N" />
+    <Enabled v="Y" />
     <Properties>
       <Component_name v="LEDPin1" />
       <Pin_for_I_O v="PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FTM3_CH0/FB_ALE/FB_CS1_b/FB_TS_b" />
       <inhrbean type="BitIO_LDD">
-        <Enabled v="N" />
+        <Enabled v="Y" />
         <Template v="BitIO_LDD" />
         <Properties>
           <Component_name v="BitIoLdd1" />
           <Pin_for_I_O v="PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FTM3_CH0/FB_ALE/FB_CS1_b/FB_TS_b" />
-          <Direction v="Input/Output" />
+          <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
-            <Init__value v="0" />
+            <Init__value v="1" />
             <Auto_initialization v="yes" />
           </group>
-          <Safe_mode v="yes" />
+          <Safe_mode v="no" />
         </Properties>
         <Methods>
           <Init v="generate code" />
           <Deinit v="don&amp;apos;t generate code" />
           <GetDir v="don&amp;apos;t generate code" />
-          <SetDir v="generate code" />
-          <SetInput v="generate code" />
-          <SetOutput v="generate code" />
+          <SetDir v="don&amp;apos;t generate code" />
+          <SetInput v="don&amp;apos;t generate code" />
+          <SetOutput v="don&amp;apos;t generate code" />
           <GetVal v="generate code" />
           <PutVal v="generate code" />
           <ClrVal v="generate code" />
@@ -187,31 +187,31 @@ PE_DEBUGHALT();
     </Events>
   </Bean>
   <Bean name="LEDPin2" type="BitIO">
-    <Enabled v="N" />
+    <Enabled v="Y" />
     <Properties>
       <Component_name v="LEDPin2" />
       <Pin_for_I_O v="CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/I2C2_SDA/I2S0_TX_FS/FTM1_QD_PHB" />
       <inhrbean type="BitIO_LDD">
-        <Enabled v="N" />
+        <Enabled v="Y" />
         <Template v="BitIO_LDD" />
         <Properties>
           <Component_name v="BitIoLdd2" />
           <Pin_for_I_O v="CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/I2C2_SDA/I2S0_TX_FS/FTM1_QD_PHB" />
-          <Direction v="Input/Output" />
+          <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
-            <Init__value v="0" />
+            <Init__value v="1" />
             <Auto_initialization v="yes" />
           </group>
-          <Safe_mode v="yes" />
+          <Safe_mode v="no" />
         </Properties>
         <Methods>
           <Init v="generate code" />
           <Deinit v="don&amp;apos;t generate code" />
           <GetDir v="don&amp;apos;t generate code" />
-          <SetDir v="generate code" />
-          <SetInput v="generate code" />
-          <SetOutput v="generate code" />
+          <SetDir v="don&amp;apos;t generate code" />
+          <SetInput v="don&amp;apos;t generate code" />
+          <SetOutput v="don&amp;apos;t generate code" />
           <GetVal v="generate code" />
           <PutVal v="generate code" />
           <ClrVal v="generate code" />
@@ -260,6 +260,13 @@ PE_DEBUGHALT();
         <Properties>
           <Component_name v="BitIoLdd4" />
           <Pin_for_I_O v="CMP1_IN1/PTC3/LLWU_P7/SPI0_PCS1/UART1_RX/FTM0_CH2/CLKOUT/I2S0_TX_BCLK" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
@@ -267,6 +274,8 @@ PE_DEBUGHALT();
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="yes" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -323,6 +332,18 @@ PE_DEBUGHALT();
         <Properties>
           <Component_name v="BitIoLdd3" />
           <Pin_for_I_O v="PTA14/SPI0_PCS0/UART0_TX/I2C2_SCL/I2S0_RX_BCLK/I2S0_TXD1" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain sel_value="The settings is irrelevant for input direction">
+            
+push-pull
+
+            <EmptySection_DummyValue />
+          </Open_drain>
           <Direction v="Input" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -330,6 +351,8 @@ PE_DEBUGHALT();
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="yes" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -394,6 +417,7 @@ rising or falling edge
           </Generate_interrupt_on>
           <Interrupt v="INT_PORTA" />
           <Interrupt_priority v="medium priority" />
+          <Interrupt_preserve_registers v="yes" />
           <group name="Initialization">
             <Enabled_in_init__code v="yes" />
           </group>
@@ -498,6 +522,8 @@ rising or falling edge
               <Interrupt_TxD_priority v="medium priority" />
               <Interrupt_Error v="INT_UART0_ERR" />
               <Interrupt_Error_priority v="medium priority" />
+              <Interrupt_Idle v="" />
+              <Interrupt_Idle_priority v="medium priority" />
             </boolgroup>
             <group name="Settings">
               <Data_width v="8 bits" />
@@ -586,6 +612,12 @@ rising or falling edge
               <Event_procedure_name v="ASerialLdd3_OnError" />
             </event>
             <event name="OnTxComplete" v="don&amp;apos;t generate code" />
+            <event name="OnIdle" v="generate code">
+              <Event_procedure_name v="ASerialLdd3_OnIdle" />
+            </event>
+            <event name="OnRxActiveEdge" v="generate code">
+              <Event_procedure_name v="ASerialLdd3_OnRxActiveEdge" />
+            </event>
           </Events>
         </inhrbean>
       </group>
@@ -739,12 +771,21 @@ rising or falling edge
             <group name="Settings">
               <Parity v="none" />
               <Width v="8 bits" />
+              <Width v="8" />
               <Stop_bit v="1" />
+              <Stop_bit v="1.000" />
+              <Channel_Mode v="Normal" />
+              <enumgroup name="SCI output mode" v="Normal">
+                <EmptySection_DummyValue />
+              </enumgroup>
+              <LIN_slave_mode v="Disabled" />
               <boolgroup name="Receiver" v="Enabled">
                 <RxD v="PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI" />
+                <boolgroup name="DMA support" v="Disabled" />
               </boolgroup>
               <boolgroup name="Transmitter" v="Enabled">
                 <TxD v="PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO" />
+                <boolgroup name="DMA support" v="Disabled" />
               </boolgroup>
               <Baud_rate v="9600 baud" />
               <Break_signal v="Disabled" />
@@ -753,8 +794,17 @@ rising or falling edge
               <Receiver_input v="Not inverted" />
               <Stop_in_wait_mode v="no" />
               <Idle_line_mode v="starts after start bit" />
+              <Break_detection_length v="10/11 bits" />
+              <Arbiter_mode v="Idle" />
+              <Arbiter_counter_clock_source v="derived from the bus clock" />
               <Break_generation_length v="Short" />
+              <boolgroup name="Infrared SCI output" v="Disabled" />
+              <Slew_rate_control v="Disabled" />
+              <Active_edge_detection v="Disabled" />
+              <Bit_error_detection v="Disabled" />
             </group>
+            <Attention_mode v="Disabled" />
+            <boolgroup name="Clock pin" v="Disabled" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <Events_enabled_in_init_ v="yes" />
@@ -763,111 +813,6 @@ rising or falling edge
               <High_speed_mode v="This component enabled" />
               <Low_speed_mode v="This component disabled" />
               <Slow_speed_mode v="This component disabled" />
-            </group>
-            <group name="Referenced components">
-              <inhrbean type="Serial_LDD">
-                <Enabled v="N" />
-                <Properties>
-                  <Component_name v="ASerialLdd2" />
-                  <Device v="UART0" />
-                  <boolgroup name="Interrupt service/event" v="Enabled">
-                    <Interrupt_RxD v="INT_UART0_RX_TX" />
-                    <Interrupt_RxD_priority v="medium priority" />
-                    <Interrupt_TxD v="INT_UART0_RX_TX" />
-                    <Interrupt_TxD_priority v="medium priority" />
-                    <Interrupt_Error v="INT_UART0_ERR" />
-                    <Interrupt_Error_priority v="medium priority" />
-                  </boolgroup>
-                  <group name="Settings">
-                    <Data_width v="8 bits" />
-                    <Parity v="None" />
-                    <Stop_bits v="1" />
-                    <Loop_mode v="Normal" />
-                    <Baud_rate v="9600 baud" />
-                    <Wakeup_condition v="Address mark wakeup" />
-                    <Stop_in_wait_mode v="no" />
-                    <Idle_line_mode v="Starts after start bit" />
-                    <Transmitter_output v="Inverted" />
-                    <Receiver_input v="Inverted" />
-                    <Break_generation_length v="10/11 bits" />
-                    <boolgroup name="Receiver" v="Enabled">
-                      <RxD v="PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI" />
-                    </boolgroup>
-                    <boolgroup name="Transmitter" v="Enabled">
-                      <TxD v="PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO" />
-                    </boolgroup>
-                    <enumgroup name="Flow control" v="None">
-                      <EmptySection_DummyValue />
-                    </enumgroup>
-                  </group>
-                  <group name="Initialization">
-                    <Enabled_in_init__code v="yes" />
-                    <group name="Event mask">
-                      <OnBlockSent v="Enabled" />
-                      <OnBlockReceived v="Enabled" />
-                      <OnTxComplete v="Disabled" />
-                      <OnError v="Enabled" />
-                      <OnBreak v="Enabled" />
-                    </group>
-                  </group>
-                </Properties>
-                <Methods>
-                  <Init v="generate code" />
-                  <Deinit v="don&amp;apos;t generate code" />
-                  <Enable v="don&amp;apos;t generate code" />
-                  <Disable v="don&amp;apos;t generate code" />
-                  <SendBlock v="generate code" />
-                  <ReceiveBlock v="generate code" />
-                  <CancelBlockTransmission v="don&amp;apos;t generate code" />
-                  <CancelBlockReception v="don&amp;apos;t generate code" />
-                  <GetError v="generate code" />
-                  <GetSentDataNum v="don&amp;apos;t generate code" />
-                  <GetReceivedDataNum v="don&amp;apos;t generate code" />
-                  <GetTxCompleteStatus v="don&amp;apos;t generate code" />
-                  <SetEventMask v="don&amp;apos;t generate code" />
-                  <GetEventMask v="don&amp;apos;t generate code" />
-                  <SelectBaudRate v="don&amp;apos;t generate code" />
-                  <GetSelectedBaudRate v="don&amp;apos;t generate code" />
-                  <SetParity v="don&amp;apos;t generate code" />
-                  <GetParity v="don&amp;apos;t generate code" />
-                  <SetDataWidth v="don&amp;apos;t generate code" />
-                  <GetDataWidth v="don&amp;apos;t generate code" />
-                  <SetStopBitLength v="don&amp;apos;t generate code" />
-                  <GetStopBitLength v="don&amp;apos;t generate code" />
-                  <SetLoopMode v="don&amp;apos;t generate code" />
-                  <GetLoopMode v="don&amp;apos;t generate code" />
-                  <GetStats v="don&amp;apos;t generate code" />
-                  <ClearStats v="don&amp;apos;t generate code" />
-                  <SendBreak v="don&amp;apos;t generate code" />
-                  <GetBreak v="don&amp;apos;t generate code" />
-                  <TurnTxOn v="don&amp;apos;t generate code" />
-                  <TurnTxOff v="don&amp;apos;t generate code" />
-                  <TurnRxOn v="don&amp;apos;t generate code" />
-                  <TurnRxOff v="don&amp;apos;t generate code" />
-                  <ConnectPin v="don&amp;apos;t generate code" />
-                  <Main v="don&amp;apos;t generate code" />
-                  <SetOperationMode v="don&amp;apos;t generate code" />
-                  <GetDriverState v="don&amp;apos;t generate code" />
-                </Methods>
-                <Events>
-                  <Event_module_name v="Events" />
-                  <event name="OnBlockReceived" v="generate code">
-                    <Event_procedure_name v="ASerialLdd2_OnBlockReceived" />
-                  </event>
-                  <event name="OnBlockSent" v="generate code">
-                    <Event_procedure_name v="ASerialLdd2_OnBlockSent" />
-                  </event>
-                  <event name="OnBreak" v="generate code">
-                    <Event_procedure_name v="ASerialLdd2_OnBreak" />
-                  </event>
-                  <event name="OnError" v="generate code">
-                    <Event_procedure_name v="ASerialLdd2_OnError" />
-                  </event>
-                  <event name="OnTxComplete" v="generate code">
-                    <Event_procedure_name v="ASerialLdd2_OnTxComplete" />
-                  </event>
-                </Events>
-              </inhrbean>
             </group>
           </Properties>
           <Methods>
@@ -888,13 +833,30 @@ rising or falling edge
             <SetBaudRateMode v="don&amp;apos;t generate code" />
             <GetError v="don&amp;apos;t generate code" />
             <GetBreak v="don&amp;apos;t generate code" />
+            <SetBreak v="generate code" />
             <SetBreak v="don&amp;apos;t generate code" />
+            <SetAttentionMode v="don&amp;apos;t generate code" />
             <TurnTxOn v="don&amp;apos;t generate code" />
             <TurnTxOff v="don&amp;apos;t generate code" />
             <TurnRxOn v="don&amp;apos;t generate code" />
             <TurnRxOff v="don&amp;apos;t generate code" />
             <LoopMode v="don&amp;apos;t generate code" />
+            <SetIdle v="don&amp;apos;t generate code" />
+            <Standby v="don&amp;apos;t generate code" />
+            <GetArbiterStatus v="don&amp;apos;t generate code" />
+            <ResetArbiterCounter v="don&amp;apos;t generate code" />
+            <GetArbiterCounter v="don&amp;apos;t generate code" />
+            <SetFallingEdgesMeasurement v="don&amp;apos;t generate code" />
+            <SetLowLevelMeasurement v="don&amp;apos;t generate code" />
+            <ClearArbiterFlags v="don&amp;apos;t generate code" />
+            <SetArbitrationMode v="don&amp;apos;t generate code" />
+            <AdjustBaudRate v="don&amp;apos;t generate code" />
+            <SetDirection v="don&amp;apos;t generate code" />
             <ConnectPin v="don&amp;apos;t generate code" />
+            <GetRxIdle v="don&amp;apos;t generate code" />
+            <GetTxComplete v="don&amp;apos;t generate code" />
+            <EnableRxEdgeDetect v="don&amp;apos;t generate code" />
+            <DisableRxEdgeDetect v="don&amp;apos;t generate code" />
           </Methods>
           <Events>
             <Event_module_name v="Events" />
@@ -907,7 +869,9 @@ rising or falling edge
             <event name="OnFullRxBuf" v="don&amp;apos;t generate code" />
             <event name="OnFreeTxBuf" v="don&amp;apos;t generate code" />
             <event name="OnBreak" v="don&amp;apos;t generate code" />
+            <event name="OnIdle" v="don&amp;apos;t generate code" />
             <event name="OnTxComplete" v="don&amp;apos;t generate code" />
+            <event name="OnRxActiveEdge" v="don&amp;apos;t generate code" />
           </Events>
         </inhrbean>
       </group>
@@ -983,7 +947,7 @@ rising or falling edge
       <Module_name v="FTM3" />
       <Counter v="FTM3_CNT" />
       <Counter_direction v="Up" />
-      <Counter_width v="" />
+      <Counter_width v="16 bits" />
       <Value_type v="Optimal" />
       <enumgroup name="Input clock source" v="Internal">
         <Counter_frequency v="1.875 MHz" />
@@ -1058,6 +1022,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd20" />
           <Pin_for_I_O v="CMP0_IN1/PTC7/SPI0_SIN/USB_SOF_OUT/I2S0_RX_FS/FB_AD8" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
@@ -1065,6 +1036,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="yes" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -1121,6 +1094,18 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd21" />
           <Pin_for_I_O v="CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/FB_AD9/I2S0_MCLK" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain sel_value="The settings is irrelevant for input direction">
+            
+push-pull
+
+            <EmptySection_DummyValue />
+          </Open_drain>
           <Direction v="Input" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -1128,6 +1113,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="yes" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -1282,12 +1269,21 @@ rising or falling edge
             <group name="Settings">
               <Parity v="none" />
               <Width v="8 bits" />
+              <Width v="8" />
               <Stop_bit v="1" />
+              <Stop_bit v="1.000" />
+              <Channel_Mode v="Normal" />
+              <enumgroup name="SCI output mode" v="Normal">
+                <EmptySection_DummyValue />
+              </enumgroup>
+              <LIN_slave_mode v="Disabled" />
               <boolgroup name="Receiver" v="Enabled">
                 <RxD v="ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN" />
+                <boolgroup name="DMA support" v="Disabled" />
               </boolgroup>
               <boolgroup name="Transmitter" v="Enabled">
                 <TxD v="ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT" />
+                <boolgroup name="DMA support" v="Disabled" />
               </boolgroup>
               <Baud_rate v="9600 baud" />
               <Break_signal v="Disabled" />
@@ -1296,8 +1292,17 @@ rising or falling edge
               <Receiver_input v="Not inverted" />
               <Stop_in_wait_mode v="no" />
               <Idle_line_mode v="starts after start bit" />
+              <Break_detection_length v="10/11 bits" />
+              <Arbiter_mode v="Idle" />
+              <Arbiter_counter_clock_source v="derived from the bus clock" />
               <Break_generation_length v="Short" />
+              <boolgroup name="Infrared SCI output" v="Disabled" />
+              <Slew_rate_control v="Disabled" />
+              <Active_edge_detection v="Disabled" />
+              <Bit_error_detection v="Disabled" />
             </group>
+            <Attention_mode v="Disabled" />
+            <boolgroup name="Clock pin" v="Disabled" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <Events_enabled_in_init_ v="yes" />
@@ -1306,111 +1311,6 @@ rising or falling edge
               <High_speed_mode v="This component enabled" />
               <Low_speed_mode v="This component disabled" />
               <Slow_speed_mode v="This component disabled" />
-            </group>
-            <group name="Referenced components">
-              <inhrbean type="Serial_LDD">
-                <Enabled v="N" />
-                <Properties>
-                  <Component_name v="ASerialLdd1" />
-                  <Device v="UART1" />
-                  <boolgroup name="Interrupt service/event" v="Enabled">
-                    <Interrupt_RxD v="INT_UART1_RX_TX" />
-                    <Interrupt_RxD_priority v="medium priority" />
-                    <Interrupt_TxD v="INT_UART1_RX_TX" />
-                    <Interrupt_TxD_priority v="medium priority" />
-                    <Interrupt_Error v="INT_UART1_ERR" />
-                    <Interrupt_Error_priority v="medium priority" />
-                  </boolgroup>
-                  <group name="Settings">
-                    <Data_width v="8 bits" />
-                    <Parity v="None" />
-                    <Stop_bits v="1" />
-                    <Loop_mode v="Normal" />
-                    <Baud_rate v="9600 baud" />
-                    <Wakeup_condition v="Address mark wakeup" />
-                    <Stop_in_wait_mode v="no" />
-                    <Idle_line_mode v="Starts after start bit" />
-                    <Transmitter_output v="Inverted" />
-                    <Receiver_input v="Inverted" />
-                    <Break_generation_length v="10/11 bits" />
-                    <boolgroup name="Receiver" v="Enabled">
-                      <RxD v="ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/TRACE_D3/I2C1_SCL/SPI1_SIN" />
-                    </boolgroup>
-                    <boolgroup name="Transmitter" v="Enabled">
-                      <TxD v="ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/TRACE_CLKOUT/I2C1_SDA/RTC_CLKOUT" />
-                    </boolgroup>
-                    <enumgroup name="Flow control" v="None">
-                      <EmptySection_DummyValue />
-                    </enumgroup>
-                  </group>
-                  <group name="Initialization">
-                    <Enabled_in_init__code v="yes" />
-                    <group name="Event mask">
-                      <OnBlockSent v="Enabled" />
-                      <OnBlockReceived v="Enabled" />
-                      <OnTxComplete v="Disabled" />
-                      <OnError v="Enabled" />
-                      <OnBreak v="Enabled" />
-                    </group>
-                  </group>
-                </Properties>
-                <Methods>
-                  <Init v="generate code" />
-                  <Deinit v="don&amp;apos;t generate code" />
-                  <Enable v="don&amp;apos;t generate code" />
-                  <Disable v="don&amp;apos;t generate code" />
-                  <SendBlock v="generate code" />
-                  <ReceiveBlock v="generate code" />
-                  <CancelBlockTransmission v="don&amp;apos;t generate code" />
-                  <CancelBlockReception v="don&amp;apos;t generate code" />
-                  <GetError v="generate code" />
-                  <GetSentDataNum v="don&amp;apos;t generate code" />
-                  <GetReceivedDataNum v="don&amp;apos;t generate code" />
-                  <GetTxCompleteStatus v="don&amp;apos;t generate code" />
-                  <SetEventMask v="don&amp;apos;t generate code" />
-                  <GetEventMask v="don&amp;apos;t generate code" />
-                  <SelectBaudRate v="don&amp;apos;t generate code" />
-                  <GetSelectedBaudRate v="don&amp;apos;t generate code" />
-                  <SetParity v="don&amp;apos;t generate code" />
-                  <GetParity v="don&amp;apos;t generate code" />
-                  <SetDataWidth v="don&amp;apos;t generate code" />
-                  <GetDataWidth v="don&amp;apos;t generate code" />
-                  <SetStopBitLength v="don&amp;apos;t generate code" />
-                  <GetStopBitLength v="don&amp;apos;t generate code" />
-                  <SetLoopMode v="don&amp;apos;t generate code" />
-                  <GetLoopMode v="don&amp;apos;t generate code" />
-                  <GetStats v="don&amp;apos;t generate code" />
-                  <ClearStats v="don&amp;apos;t generate code" />
-                  <SendBreak v="don&amp;apos;t generate code" />
-                  <GetBreak v="don&amp;apos;t generate code" />
-                  <TurnTxOn v="don&amp;apos;t generate code" />
-                  <TurnTxOff v="don&amp;apos;t generate code" />
-                  <TurnRxOn v="don&amp;apos;t generate code" />
-                  <TurnRxOff v="don&amp;apos;t generate code" />
-                  <ConnectPin v="don&amp;apos;t generate code" />
-                  <Main v="don&amp;apos;t generate code" />
-                  <SetOperationMode v="don&amp;apos;t generate code" />
-                  <GetDriverState v="don&amp;apos;t generate code" />
-                </Methods>
-                <Events>
-                  <Event_module_name v="Events" />
-                  <event name="OnBlockReceived" v="generate code">
-                    <Event_procedure_name v="ASerialLdd1_OnBlockReceived" />
-                  </event>
-                  <event name="OnBlockSent" v="generate code">
-                    <Event_procedure_name v="ASerialLdd1_OnBlockSent" />
-                  </event>
-                  <event name="OnBreak" v="generate code">
-                    <Event_procedure_name v="ASerialLdd1_OnBreak" />
-                  </event>
-                  <event name="OnError" v="generate code">
-                    <Event_procedure_name v="ASerialLdd1_OnError" />
-                  </event>
-                  <event name="OnTxComplete" v="generate code">
-                    <Event_procedure_name v="ASerialLdd1_OnTxComplete" />
-                  </event>
-                </Events>
-              </inhrbean>
             </group>
           </Properties>
           <Methods>
@@ -1431,13 +1331,30 @@ rising or falling edge
             <SetBaudRateMode v="don&amp;apos;t generate code" />
             <GetError v="don&amp;apos;t generate code" />
             <GetBreak v="don&amp;apos;t generate code" />
+            <SetBreak v="generate code" />
             <SetBreak v="don&amp;apos;t generate code" />
+            <SetAttentionMode v="don&amp;apos;t generate code" />
             <TurnTxOn v="don&amp;apos;t generate code" />
             <TurnTxOff v="don&amp;apos;t generate code" />
             <TurnRxOn v="don&amp;apos;t generate code" />
             <TurnRxOff v="don&amp;apos;t generate code" />
             <LoopMode v="don&amp;apos;t generate code" />
+            <SetIdle v="don&amp;apos;t generate code" />
+            <Standby v="don&amp;apos;t generate code" />
+            <GetArbiterStatus v="don&amp;apos;t generate code" />
+            <ResetArbiterCounter v="don&amp;apos;t generate code" />
+            <GetArbiterCounter v="don&amp;apos;t generate code" />
+            <SetFallingEdgesMeasurement v="don&amp;apos;t generate code" />
+            <SetLowLevelMeasurement v="don&amp;apos;t generate code" />
+            <ClearArbiterFlags v="don&amp;apos;t generate code" />
+            <SetArbitrationMode v="don&amp;apos;t generate code" />
+            <AdjustBaudRate v="don&amp;apos;t generate code" />
+            <SetDirection v="don&amp;apos;t generate code" />
             <ConnectPin v="don&amp;apos;t generate code" />
+            <GetRxIdle v="don&amp;apos;t generate code" />
+            <GetTxComplete v="don&amp;apos;t generate code" />
+            <EnableRxEdgeDetect v="don&amp;apos;t generate code" />
+            <DisableRxEdgeDetect v="don&amp;apos;t generate code" />
           </Methods>
           <Events>
             <Event_module_name v="Events" />
@@ -1450,7 +1367,9 @@ rising or falling edge
             <event name="OnFullRxBuf" v="don&amp;apos;t generate code" />
             <event name="OnFreeTxBuf" v="don&amp;apos;t generate code" />
             <event name="OnBreak" v="don&amp;apos;t generate code" />
+            <event name="OnIdle" v="don&amp;apos;t generate code" />
             <event name="OnTxComplete" v="don&amp;apos;t generate code" />
+            <event name="OnRxActiveEdge" v="don&amp;apos;t generate code" />
           </Events>
         </inhrbean>
       </group>
@@ -1858,6 +1777,7 @@ rising or falling edge
             <boolgroup name="Interrupt service/event" v="Enabled">
               <Interrupt v="" />
               <Interrupt_priority v="medium priority" />
+              <Interrupt_preserve_registers v="yes" />
             </boolgroup>
             <Interrupt_period v="1 ms" />
             <group name="Initialization">
@@ -2031,39 +1951,13 @@ rising or falling edge
             <Properties>
               <Component_name v="LEDpin3" />
               <Pin_for_I_O v="ADC0_SE5b/PTD1/SPI0_SCK/UART2_CTS_b/FTM3_CH1/FB_CS0_b" />
-              <inhrbean type="BitIO_LDD">
-                <Enabled v="N" />
-                <Template v="BitIO_LDD" />
-                <Properties>
-                  <Component_name v="BitIoLdd5" />
-                  <Pin_for_I_O v="ADC0_SE5b/PTD1/SPI0_SCK/UART2_CTS_b/FTM3_CH1/FB_CS0_b" />
-                  <Direction v="Output" />
-                  <group name="Initialization">
-                    <Init__direction v="Output" />
-                    <Init__value v="0" />
-                    <Auto_initialization v="yes" />
-                  </group>
-                  <Safe_mode v="yes" />
-                </Properties>
-                <Methods>
-                  <Init v="generate code" />
-                  <Deinit v="don&amp;apos;t generate code" />
-                  <GetDir v="don&amp;apos;t generate code" />
-                  <SetDir v="don&amp;apos;t generate code" />
-                  <SetInput v="don&amp;apos;t generate code" />
-                  <SetOutput v="don&amp;apos;t generate code" />
-                  <GetVal v="generate code" />
-                  <PutVal v="generate code" />
-                  <ClrVal v="generate code" />
-                  <SetVal v="generate code" />
-                  <NegVal v="generate code" />
-                  <ConnectPin v="don&amp;apos;t generate code" />
-                  <GetRawVal v="don&amp;apos;t generate code" />
-                </Methods>
-                <Events>
-                  <EmptySection_DummyValue />
-                </Events>
-              </inhrbean>
+              <Pull_resistor sel_value="no pull resistor">
+                
+autoselected pull
+
+                <EmptySection_DummyValue />
+              </Pull_resistor>
+              <Open_drain v="push-pull" />
               <Direction v="Output" />
               <group name="Initialization">
                 <Init__direction v="Output" />
@@ -2119,7 +2013,7 @@ rising or falling edge
       <Module_name v="FTM2" />
       <Counter v="FTM2_CNT" />
       <Counter_direction v="Up" />
-      <Counter_width v="" />
+      <Counter_width v="16 bits" />
       <Value_type v="Optimal" />
       <enumgroup name="Input clock source" v="Internal">
         <Counter_frequency v="1.875 MHz" />
@@ -2194,6 +2088,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd6" />
           <Pin_for_I_O v="PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FTM3_CH2/FB_AD4/I2C0_SCL" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Input/Output" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -2201,6 +2102,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="no" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -2257,6 +2160,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd7" />
           <Pin_for_I_O v="PTD3/SPI0_SIN/UART2_TX/FTM3_CH3/FB_AD3/I2C0_SDA" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Input/Output" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -2264,6 +2174,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="no" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -2320,6 +2232,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd8" />
           <Pin_for_I_O v="PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Input/Output" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -2327,6 +2246,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="no" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -2383,6 +2304,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd9" />
           <Pin_for_I_O v="ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Input/Output" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -2390,6 +2318,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="no" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -2446,6 +2376,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd10" />
           <Pin_for_I_O v="ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Input/Output" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -2453,6 +2390,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="no" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -2509,6 +2448,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd11" />
           <Pin_for_I_O v="PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Input/Output" />
           <group name="Initialization">
             <Init__direction v="Input" />
@@ -2516,6 +2462,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="no" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -2576,39 +2524,18 @@ rising or falling edge
             <Properties>
               <Component_name v="C12" />
               <Pin_for_I_O v="PTC17/UART3_TX/FB_CS4_b/FB_TSIZ0/FB_BE31_24_BLS7_0_b" />
-              <inhrbean type="BitIO_LDD">
-                <Enabled v="N" />
-                <Template v="BitIO_LDD" />
-                <Properties>
-                  <Component_name v="BitIoLdd16" />
-                  <Pin_for_I_O v="PTC17/UART3_TX/FB_CS4_b/FB_TSIZ0/FB_BE31_24_BLS7_0_b" />
-                  <Direction v="Input" />
-                  <group name="Initialization">
-                    <Init__direction v="Input" />
-                    <Init__value v="0" />
-                    <Auto_initialization v="yes" />
-                  </group>
-                  <Safe_mode v="no" />
-                </Properties>
-                <Methods>
-                  <Init v="generate code" />
-                  <Deinit v="don&amp;apos;t generate code" />
-                  <GetDir v="don&amp;apos;t generate code" />
-                  <SetDir v="don&amp;apos;t generate code" />
-                  <SetInput v="don&amp;apos;t generate code" />
-                  <SetOutput v="don&amp;apos;t generate code" />
-                  <GetVal v="generate code" />
-                  <PutVal v="don&amp;apos;t generate code" />
-                  <ClrVal v="don&amp;apos;t generate code" />
-                  <SetVal v="don&amp;apos;t generate code" />
-                  <NegVal v="don&amp;apos;t generate code" />
-                  <ConnectPin v="don&amp;apos;t generate code" />
-                  <GetRawVal v="don&amp;apos;t generate code" />
-                </Methods>
-                <Events>
-                  <EmptySection_DummyValue />
-                </Events>
-              </inhrbean>
+              <Pull_resistor sel_value="no pull resistor">
+                
+autoselected pull
+
+                <EmptySection_DummyValue />
+              </Pull_resistor>
+              <Open_drain sel_value="The settings is irrelevant for input direction">
+                
+push-pull
+
+                <EmptySection_DummyValue />
+              </Open_drain>
               <Direction v="Input" />
               <group name="Initialization">
                 <Init__direction v="Input" />
@@ -2640,39 +2567,18 @@ rising or falling edge
             <Properties>
               <Component_name v="C23" />
               <Pin_for_I_O v="PTC16/UART3_RX/FB_CS5_b/FB_TSIZ1/FB_BE23_16_BLS15_8_b" />
-              <inhrbean type="BitIO_LDD">
-                <Enabled v="N" />
-                <Template v="BitIO_LDD" />
-                <Properties>
-                  <Component_name v="BitIoLdd17" />
-                  <Pin_for_I_O v="PTC16/UART3_RX/FB_CS5_b/FB_TSIZ1/FB_BE23_16_BLS15_8_b" />
-                  <Direction v="Input" />
-                  <group name="Initialization">
-                    <Init__direction v="Input" />
-                    <Init__value v="0" />
-                    <Auto_initialization v="yes" />
-                  </group>
-                  <Safe_mode v="no" />
-                </Properties>
-                <Methods>
-                  <Init v="generate code" />
-                  <Deinit v="don&amp;apos;t generate code" />
-                  <GetDir v="don&amp;apos;t generate code" />
-                  <SetDir v="don&amp;apos;t generate code" />
-                  <SetInput v="don&amp;apos;t generate code" />
-                  <SetOutput v="don&amp;apos;t generate code" />
-                  <GetVal v="generate code" />
-                  <PutVal v="don&amp;apos;t generate code" />
-                  <ClrVal v="don&amp;apos;t generate code" />
-                  <SetVal v="don&amp;apos;t generate code" />
-                  <NegVal v="don&amp;apos;t generate code" />
-                  <ConnectPin v="don&amp;apos;t generate code" />
-                  <GetRawVal v="don&amp;apos;t generate code" />
-                </Methods>
-                <Events>
-                  <EmptySection_DummyValue />
-                </Events>
-              </inhrbean>
+              <Pull_resistor sel_value="no pull resistor">
+                
+autoselected pull
+
+                <EmptySection_DummyValue />
+              </Pull_resistor>
+              <Open_drain sel_value="The settings is irrelevant for input direction">
+                
+push-pull
+
+                <EmptySection_DummyValue />
+              </Open_drain>
               <Direction v="Input" />
               <group name="Initialization">
                 <Init__direction v="Input" />
@@ -2738,39 +2644,18 @@ rising or falling edge
             <Properties>
               <Component_name v="C13" />
               <Pin_for_I_O v="ADC1_SE7b/PTC11/LLWU_P11/I2C1_SDA/FTM3_CH7/I2S0_RXD1/FB_RW_b" />
-              <inhrbean type="BitIO_LDD">
-                <Enabled v="N" />
-                <Template v="BitIO_LDD" />
-                <Properties>
-                  <Component_name v="BitIoLdd18" />
-                  <Pin_for_I_O v="ADC1_SE7b/PTC11/LLWU_P11/I2C1_SDA/FTM3_CH7/I2S0_RXD1/FB_RW_b" />
-                  <Direction v="Input" />
-                  <group name="Initialization">
-                    <Init__direction v="Input" />
-                    <Init__value v="0" />
-                    <Auto_initialization v="yes" />
-                  </group>
-                  <Safe_mode v="no" />
-                </Properties>
-                <Methods>
-                  <Init v="generate code" />
-                  <Deinit v="don&amp;apos;t generate code" />
-                  <GetDir v="don&amp;apos;t generate code" />
-                  <SetDir v="don&amp;apos;t generate code" />
-                  <SetInput v="don&amp;apos;t generate code" />
-                  <SetOutput v="don&amp;apos;t generate code" />
-                  <GetVal v="generate code" />
-                  <PutVal v="don&amp;apos;t generate code" />
-                  <ClrVal v="don&amp;apos;t generate code" />
-                  <SetVal v="don&amp;apos;t generate code" />
-                  <NegVal v="don&amp;apos;t generate code" />
-                  <ConnectPin v="don&amp;apos;t generate code" />
-                  <GetRawVal v="don&amp;apos;t generate code" />
-                </Methods>
-                <Events>
-                  <EmptySection_DummyValue />
-                </Events>
-              </inhrbean>
+              <Pull_resistor sel_value="no pull resistor">
+                
+autoselected pull
+
+                <EmptySection_DummyValue />
+              </Pull_resistor>
+              <Open_drain sel_value="The settings is irrelevant for input direction">
+                
+push-pull
+
+                <EmptySection_DummyValue />
+              </Open_drain>
               <Direction v="Input" />
               <group name="Initialization">
                 <Init__direction v="Input" />
@@ -2802,39 +2687,18 @@ rising or falling edge
             <Properties>
               <Component_name v="C25" />
               <Pin_for_I_O v="ADC1_SE6b/PTC10/I2C1_SCL/FTM3_CH6/I2S0_RX_FS/FB_AD5" />
-              <inhrbean type="BitIO_LDD">
-                <Enabled v="N" />
-                <Template v="BitIO_LDD" />
-                <Properties>
-                  <Component_name v="BitIoLdd19" />
-                  <Pin_for_I_O v="ADC1_SE6b/PTC10/I2C1_SCL/FTM3_CH6/I2S0_RX_FS/FB_AD5" />
-                  <Direction v="Input" />
-                  <group name="Initialization">
-                    <Init__direction v="Input" />
-                    <Init__value v="0" />
-                    <Auto_initialization v="yes" />
-                  </group>
-                  <Safe_mode v="no" />
-                </Properties>
-                <Methods>
-                  <Init v="generate code" />
-                  <Deinit v="don&amp;apos;t generate code" />
-                  <GetDir v="don&amp;apos;t generate code" />
-                  <SetDir v="don&amp;apos;t generate code" />
-                  <SetInput v="don&amp;apos;t generate code" />
-                  <SetOutput v="don&amp;apos;t generate code" />
-                  <GetVal v="generate code" />
-                  <PutVal v="don&amp;apos;t generate code" />
-                  <ClrVal v="don&amp;apos;t generate code" />
-                  <SetVal v="don&amp;apos;t generate code" />
-                  <NegVal v="don&amp;apos;t generate code" />
-                  <ConnectPin v="don&amp;apos;t generate code" />
-                  <GetRawVal v="don&amp;apos;t generate code" />
-                </Methods>
-                <Events>
-                  <EmptySection_DummyValue />
-                </Events>
-              </inhrbean>
+              <Pull_resistor sel_value="no pull resistor">
+                
+autoselected pull
+
+                <EmptySection_DummyValue />
+              </Pull_resistor>
+              <Open_drain sel_value="The settings is irrelevant for input direction">
+                
+push-pull
+
+                <EmptySection_DummyValue />
+              </Open_drain>
               <Direction v="Input" />
               <group name="Initialization">
                 <Init__direction v="Input" />
@@ -2892,7 +2756,7 @@ rising or falling edge
       <Module_name v="FTM0" />
       <Counter v="FTM0_CNT" />
       <Counter_direction v="Up" />
-      <Counter_width v="" />
+      <Counter_width v="16 bits" />
       <Value_type v="uint16_t" />
       <enumgroup name="Input clock source" v="Internal">
         <Counter_frequency v="60 MHz" />
@@ -2997,6 +2861,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd12" />
           <Pin_for_I_O v="ADC1_SE5b/CMP0_IN3/PTC9/FTM3_CH5/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
@@ -3004,6 +2875,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="yes" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -3156,6 +3029,13 @@ rising or falling edge
         <Properties>
           <Component_name v="BitIoLdd13" />
           <Pin_for_I_O v="ADC1_SE4b/CMP0_IN2/PTC8/FTM3_CH4/I2S0_MCLK/FB_AD7" />
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
@@ -3163,6 +3043,8 @@ rising or falling edge
             <Auto_initialization v="yes" />
           </group>
           <Safe_mode v="yes" />
+          <Optimization_for v="speed" />
+          <Implement_using v="EGPIO" />
         </Properties>
         <Methods>
           <Init v="generate code" />
@@ -3336,6 +3218,7 @@ rising or falling edge
             <boolgroup name="Interrupt service/event" v="Enabled">
               <Interrupt v="" />
               <Interrupt_priority v="medium priority" />
+              <Interrupt_preserve_registers v="yes" />
             </boolgroup>
             <Interrupt_period v="70 &amp;#181;s" />
             <group name="Initialization">
@@ -3409,7 +3292,7 @@ rising or falling edge
       <Module_name v="PIT" />
       <Counter v="PIT_CVAL1" />
       <Counter_direction v="Up" />
-      <Counter_width v="" />
+      <Counter_width v="32 bits" />
       <Value_type v="Optimal" />
       <enumgroup name="Input clock source" v="Internal">
         <Counter_frequency v="Auto select" />
@@ -3425,7 +3308,7 @@ rising or falling edge
       <group name="Initialization">
         <Enabled_in_init__code v="yes" />
         <group name="Event mask">
-          <OnCounterRestart v="Disabled" />
+          <OnCounterRestart v="Enabled" />
           <OnChannel0 v="Disabled" />
           <OnChannel1 v="Disabled" />
           <OnChannel2 v="Disabled" />
@@ -3537,39 +3420,13 @@ rising or falling edge
         <Properties>
           <Component_name v="CE1" />
           <Pin_for_I_O v="ADC1_SE14/PTB10/SPI1_PCS0/UART3_RX/FB_AD19/FTM0_FLT1" />
-          <inhrbean type="BitIO_LDD">
-            <Enabled v="N" />
-            <Template v="BitIO_LDD" />
-            <Properties>
-              <Component_name v="BitIoLdd22" />
-              <Pin_for_I_O v="ADC1_SE14/PTB10/SPI1_PCS0/UART3_RX/FB_AD19/FTM0_FLT1" />
-              <Direction v="Output" />
-              <group name="Initialization">
-                <Init__direction v="Output" />
-                <Init__value v="0" />
-                <Auto_initialization v="yes" />
-              </group>
-              <Safe_mode v="yes" />
-            </Properties>
-            <Methods>
-              <Init v="generate code" />
-              <Deinit v="don&amp;apos;t generate code" />
-              <GetDir v="don&amp;apos;t generate code" />
-              <SetDir v="don&amp;apos;t generate code" />
-              <SetInput v="don&amp;apos;t generate code" />
-              <SetOutput v="don&amp;apos;t generate code" />
-              <GetVal v="generate code" />
-              <PutVal v="generate code" />
-              <ClrVal v="generate code" />
-              <SetVal v="generate code" />
-              <NegVal v="generate code" />
-              <ConnectPin v="don&amp;apos;t generate code" />
-              <GetRawVal v="don&amp;apos;t generate code" />
-            </Methods>
-            <Events>
-              <EmptySection_DummyValue />
-            </Events>
-          </inhrbean>
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
@@ -3601,39 +3458,13 @@ rising or falling edge
         <Properties>
           <Component_name v="CSN1" />
           <Pin_for_I_O v="ADC0_SE8/ADC1_SE8/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/FTM1_QD_PHA" />
-          <inhrbean type="BitIO_LDD">
-            <Enabled v="N" />
-            <Template v="BitIO_LDD" />
-            <Properties>
-              <Component_name v="BitIoLdd23" />
-              <Pin_for_I_O v="ADC0_SE8/ADC1_SE8/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/FTM1_QD_PHA" />
-              <Direction v="Output" />
-              <group name="Initialization">
-                <Init__direction v="Output" />
-                <Init__value v="1" />
-                <Auto_initialization v="yes" />
-              </group>
-              <Safe_mode v="yes" />
-            </Properties>
-            <Methods>
-              <Init v="generate code" />
-              <Deinit v="don&amp;apos;t generate code" />
-              <GetDir v="don&amp;apos;t generate code" />
-              <SetDir v="don&amp;apos;t generate code" />
-              <SetInput v="don&amp;apos;t generate code" />
-              <SetOutput v="don&amp;apos;t generate code" />
-              <GetVal v="generate code" />
-              <PutVal v="generate code" />
-              <ClrVal v="generate code" />
-              <SetVal v="generate code" />
-              <NegVal v="generate code" />
-              <ConnectPin v="don&amp;apos;t generate code" />
-              <GetRawVal v="don&amp;apos;t generate code" />
-            </Methods>
-            <Events>
-              <EmptySection_DummyValue />
-            </Events>
-          </inhrbean>
+          <Pull_resistor sel_value="no pull resistor">
+            
+autoselected pull
+
+            <EmptySection_DummyValue />
+          </Pull_resistor>
+          <Open_drain v="push-pull" />
           <Direction v="Output" />
           <group name="Initialization">
             <Init__direction v="Output" />
@@ -3672,40 +3503,18 @@ rising or falling edge
           <Properties>
             <Component_name v="IRQ1" />
             <Pin v="ADC0_SE9/ADC1_SE9/PTB1/I2C0_SDA/FTM1_CH1/FTM1_QD_PHB" />
-            <inhrbean type="ExtInt_LDD">
-              <Enabled v="N" />
-              <Template v="ExtInt_LDD" />
-              <Properties>
-                <Component_name v="ExtIntLdd2" />
-                <Pin v="ADC0_SE9/ADC1_SE9/PTB1/I2C0_SDA/FTM1_CH1/FTM1_QD_PHB" />
-                <Generate_interrupt_on v="falling edge" />
-                <Interrupt v="INT_PORTB" />
-                <Interrupt_priority v="medium priority" />
-                <group name="Initialization">
-                  <Enabled_in_init__code v="yes" />
-                </group>
-              </Properties>
-              <Methods>
-                <Init v="generate code" />
-                <Deinit v="don&amp;apos;t generate code" />
-                <Enable v="generate code" />
-                <Disable v="generate code" />
-                <GetVal v="generate code" />
-                <SetEdge v="don&amp;apos;t generate code" />
-                <SetOperationMode v="don&amp;apos;t generate code" />
-                <GetDriverState v="don&amp;apos;t generate code" />
-                <ConnectPin v="don&amp;apos;t generate code" />
-              </Methods>
-              <Events>
-                <Event_module_name v="Events" />
-                <event name="OnInterrupt" v="generate code">
-                  <Event_procedure_name v="ExtIntLdd2_OnInterrupt" />
-                </event>
-              </Events>
-            </inhrbean>
+            <Pull_resistor sel_value="no pull resistor">
+              
+autoselected pull
+
+              <EmptySection_DummyValue />
+            </Pull_resistor>
             <Generate_interrupt_on v="falling edge" />
+            <Invert_interrupt_trigger_condition v="no" />
             <Interrupt v="INT_PORTB" />
             <Interrupt_priority v="medium priority" />
+            <Interrupt_preserve_registers v="yes" />
+            <boolgroup name="Supplementary trigger input" v="Disabled" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
             </group>
@@ -3723,6 +3532,7 @@ rising or falling edge
               <Event_procedure_name v="IRQ1_OnInterrupt" />
               <Priority v="same as interrupt" />
             </event>
+            <event name="OnTriggerInterrupt" v="don&amp;apos;t generate code" />
           </Events>
         </inhrbean>
       </boolgroup>
@@ -3870,7 +3680,6 @@ rising or falling edge
               <list name="Chip select list" v="0">
                 <EmptySection_DummyValue />
               </list>
-              <boolgroup name="CS external demultiplexer" v="Disabled" />
               <list name="Attribute set list" v="1">
                 <group name="Attribute set 0">
                   <Width v="2 bits" />
@@ -3880,15 +3689,9 @@ rising or falling edge
                   <Parity v="None" />
                   <Chip_select_toggling v="yes" />
                   <Clock_rate_index v="0" />
-                  <Delay_after_transfer_index v="0" />
-                  <CS_to_CLK_delay_index v="0" />
-                  <CLK_to_CS_delay_index v="0" />
                 </group>
               </list>
               <Clock_rate v="10 MHz" />
-              <Delay_after_transfer v="0.033333 &amp;#181;s" />
-              <CS_to_CLK_delay v="0.033333 &amp;#181;s" />
-              <CLK_to_CS_delay v="0.033333 &amp;#181;s" />
               <HW_input_buffer_size v="1" />
               <HW_input_watermark v="1" />
               <HW_output_buffer_size v="1" />
@@ -3954,9 +3757,9 @@ rising or falling edge
       <SendBlock v="generate code" />
       <ClearRxBuf v="generate code" />
       <ClearTxBuf v="generate code" />
-      <CharsInRxBuf v="generate code" />
+      <CharsInRxBuf v="don&amp;apos;t generate code" />
       <GetCharsInRxBuf v="generate code" />
-      <CharsInTxBuf v="generate code" />
+      <CharsInTxBuf v="don&amp;apos;t generate code" />
       <GetCharsInTxBuf v="generate code" />
       <SetBaudRateMode v="don&amp;apos;t generate code" />
       <SetShiftClockPolarity v="don&amp;apos;t generate code" />
@@ -4274,8 +4077,14 @@ rising or falling edge
               <Component_name v="USB0" />
               <Device v="USB0" />
               <group name="Settings">
-                <Clock_gate v="" />
                 <group name="Clock settings">
+                  <group name="IRC48 clock setting">
+                    <IRC48M_module v="Disabled" />
+                    <IRC48M_regulator v="Enabled" />
+                    <IRC48M_clock_recovery v="Disabled" />
+                    <IRC48M_Reset_resume_to_rough_phase v="Disabled" />
+                    <Restart_from_IFR_trim_value v="Disabled" />
+                  </group>
                   <group name="Clock divider">
                     <Clock_divider_source v="" />
                     <Clock_divider_input_frequency v="120 MHz" />
@@ -4428,8 +4237,6 @@ rising or falling edge
               <group name="Interrupts">
                 <group name="USB">
                   <Interrupt v="" />
-                  <Interrupt_request v="Disabled" />
-                  <Interrupt_priority v="" />
                   <ISR_Name v="USB_ISR" />
                   <Stall v="Enabled" />
                   <Attach v="Enabled" />
@@ -4448,14 +4255,6 @@ rising or falling edge
                     <CRC16_error v="Disabled" />
                     <CRC5_or_EOF v="Disabled" />
                     <PID_error v="Disabled" />
-                  </group>
-                  <group name="OTG interrupts ">
-                    <ID_pin_changed v="Disabled" />
-                    <_1_ms_interrupt v="Disabled" />
-                    <Line_stage_change v="Disabled" />
-                    <Session_valid v="Disabled" />
-                    <_B__session_end v="Disabled" />
-                    <_A__bus_valid v="Disabled" />
                   </group>
                 </group>
               </group>
