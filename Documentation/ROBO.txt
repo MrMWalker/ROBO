@@ -19,32 +19,6 @@ Module "LEDPin1"   (component BitIO)
    - LEDPin1_NegVal -Negates (inverts) the output value. It is equivalent to the [PutVal(!GetVal())]. This method is available 
                 only if the direction = _[output]_ or _[input/output]_.
 
-Module "LEDPin2"   (component BitIO)
-   - LEDPin2_GetVal -Returns the input/output value. If the direction is [input] then the input value of the pin is read and 
-                returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
-                limitations). This method cannot be disabled if direction is [input].
-   - LEDPin2_PutVal -The specified output value is set. If the direction is [input], the component saves the value to a memory 
-                or a register and this value will be written to the pin after switching to the output mode (using 
-                [SetDir(TRUE)]; see <Safe mode> property for limitations). If the direction is [output], it writes the value to 
-                the pin. (Method is available only if the direction = _[output]_ or _[input/output]_).
-   - LEDPin2_ClrVal -Clears (set to zero) the output value. It is equivalent to the [PutVal(FALSE)]. This method is available 
-                only if the direction = _[output]_ or _[input/output]_.
-   - LEDPin2_SetVal -Sets (to one) the output value. It is equivalent to the [PutVal(TRUE)]. This method is available only if 
-                the direction = _[output]_ or _[input/output]_.
-   - LEDPin2_NegVal -Negates (inverts) the output value. It is equivalent to the [PutVal(!GetVal())]. This method is available 
-                only if the direction = _[output]_ or _[input/output]_.
-
-Module "KIN1"      (component KinetisTools)
-   - KIN1_SoftwareReset -Performs a reset of the device
-   - KIN1_UIDGet -Return the 128bit UID of the device
-   - KIN1_UIDSame -Compares two UID
-   - KIN1_UIDtoString -Returns the value of the UID as string
-   - KIN1_GetKinetisFamilyString -Determines the Kinetis Familiy based on SIM_SDID register
-   - KIN1_GetPC -returns the program counter
-   - KIN1_GetSP -returns the stack pointer
-   - KIN1_SetPSP -sets the process stack pointer
-   - KIN1_SetLR -Sets the link register
-
 Module "UTIL1"     (component Utility)
    - UTIL1_strcpy -Same as normal strcpy, but safe as it does not write beyond the buffer.
    - UTIL1_strcat -Same as normal strcat, but safe as it does not write beyond the buffer.
@@ -114,6 +88,17 @@ Module "UTIL1"     (component Utility)
    - UTIL1_SetValue16LE -Stores a 16bit value in memory as Little Endian
    - UTIL1_SetValue24LE -Stores a 24bit value in memory as Little Endian
    - UTIL1_SetValue32LE -Stores a 32bit value in memory as Little Endian
+
+Module "KIN1"      (component KinetisTools)
+   - KIN1_SoftwareReset -Performs a reset of the device
+   - KIN1_UIDGet -Return the 128bit UID of the device
+   - KIN1_UIDSame -Compares two UID
+   - KIN1_UIDtoString -Returns the value of the UID as string
+   - KIN1_GetKinetisFamilyString -Determines the Kinetis Familiy based on SIM_SDID register
+   - KIN1_GetPC -returns the program counter
+   - KIN1_GetSP -returns the stack pointer
+   - KIN1_SetPSP -sets the process stack pointer
+   - KIN1_SetLR -Sets the link register
 
 Module "WAIT1"     (component Wait)
    - WAIT1_Wait10Cycles -Wait for 10 CPU cycles.

@@ -32,8 +32,6 @@
 #include "Events.h"
 #include "LEDPin1.h"
 #include "BitIoLdd1.h"
-#include "LEDPin2.h"
-#include "BitIoLdd2.h"
 #include "WAIT1.h"
 #include "CS1.h"
 #include "HF1.h"

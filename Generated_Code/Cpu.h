@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K22P144M100SF5RM, Rev.2, Apr 2013
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-09-30, 14:02, # CodeGen: 0
+**     Date/Time   : 2016-09-30, 16:25, # CodeGen: 0
 **     Abstract    :
 **
 **     Settings    :
@@ -77,7 +77,7 @@ extern "C" {
 #endif
 
 /* Active configuration define symbol */
-#define PEcfg_RoboV2 1U
+#define PEcfg_RoboV1 1U
 
 /* Methods configuration constants - generated for all enabled component's methods */
 #define Cpu_EnableInt_METHOD_ENABLED

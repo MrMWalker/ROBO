@@ -28,7 +28,6 @@
 
 \page page_components Components 
 - \subpage BitIoLdd1
-- \subpage BitIoLdd2
 
 */
 
