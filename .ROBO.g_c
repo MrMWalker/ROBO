@@ -19,7 +19,7 @@
         <Line>PE_Const</Line>
         <Line>IO_Map</Line>
       </GenSharedModules>
-      <ShrdHeaderAge0>1228833593</ShrdHeaderAge0>
+      <ShrdHeaderAge0>1229354579</ShrdHeaderAge0>
       <ShrdCodeAge0>-1</ShrdCodeAge0>
       <ShrdAsemblAge0>-1</ShrdAsemblAge0>
       <ShrdHeaderAge1>1228833593</ShrdHeaderAge1>
@@ -31,8 +31,9 @@
       <ShrdHeaderAge3>1228833593</ShrdHeaderAge3>
       <ShrdCodeAge3>-1</ShrdCodeAge3>
       <ShrdAsemblAge3>-1</ShrdAsemblAge3>
-      <GenExtraFiles lines_count="10">
+      <GenExtraFiles lines_count="11">
         <Line>Documentation\doxygen\BitIoLdd1_component.txt</Line>
+        <Line>Documentation\doxygen\BitIoLdd2_component.txt</Line>
         <Line>Documentation\doxygen\ROBO_project.txt</Line>
         <Line>Documentation\doxygen\RoutingReport_component.txt</Line>
         <Line>Documentation\doxygen\pex.doxyfile</Line>
@@ -43,18 +44,19 @@
         <Line>Project_Settings\Startup_Code\startup.c</Line>
         <Line>Generated_Code\Vectors.c</Line>
       </GenExtraFiles>
-      <GenExtraFileSrcDir8>lib\Kinetis\startup\</GenExtraFileSrcDir8>
-      <GenExtraFileSrcDir4>Repositories\lib\doxygen\</GenExtraFileSrcDir4>
-      <XtraAge5>1228833593</XtraAge5>
-      <XtraAge6>1228833593</XtraAge6>
-      <XtraAge8>1228373463</XtraAge8>
-      <XtraAge9>1228833593</XtraAge9>
-      <GenExtraFileType9>4</GenExtraFileType9>
-      <GenExtraFileType8>5</GenExtraFileType8>
+      <GenExtraFileSrcDir9>lib\Kinetis\startup\</GenExtraFileSrcDir9>
+      <GenExtraFileSrcDir5>Repositories\lib\doxygen\</GenExtraFileSrcDir5>
+      <XtraAge6>1229354579</XtraAge6>
+      <XtraAge7>1229354579</XtraAge7>
+      <XtraAge9>1228373463</XtraAge9>
+      <XtraAge10>1229354579</XtraAge10>
+      <GenExtraFileType10>4</GenExtraFileType10>
+      <GenExtraFileType9>5</GenExtraFileType9>
+      <GenExtraFileType8>4</GenExtraFileType8>
       <GenExtraFileType7>4</GenExtraFileType7>
       <GenExtraFileType6>4</GenExtraFileType6>
-      <GenExtraFileType5>4</GenExtraFileType5>
-      <GenExtraFileType4>5</GenExtraFileType4>
+      <GenExtraFileType5>5</GenExtraFileType5>
+      <GenExtraFileType4>4</GenExtraFileType4>
       <GenExtraFileType3>4</GenExtraFileType3>
       <GenExtraFileType2>4</GenExtraFileType2>
       <GenExtraFileType1>4</GenExtraFileType1>
@@ -372,8 +374,9 @@
       <GenMethodsInEvents lines_count="1">
         <Line>Cpu_OnNMIINT</Line>
       </GenMethodsInEvents>
-      <GenAllModules lines_count="14">
+      <GenAllModules lines_count="16">
         <Line>BitIoLdd1</Line>
+        <Line>BitIoLdd2</Line>
         <Line>Cpu</Line>
         <Line>CS1</Line>
         <Line>Events</Line>
@@ -382,6 +385,7 @@
         <Line>KIN1</Line>
         <Line>KSDK1</Line>
         <Line>LEDPin1</Line>
+        <Line>LEDPin2</Line>
         <Line>PE_Const</Line>
         <Line>PE_Error</Line>
         <Line>PE_Types</Line>
@@ -389,9 +393,11 @@
         <Line>WAIT1</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="8">
+      <GenBeanModules lines_count="10">
         <Line>LEDPin1</Line>
         <Line>BitIoLdd1</Line>
+        <Line>LEDPin2</Line>
+        <Line>BitIoLdd2</Line>
         <Line>UTIL1</Line>
         <Line>KIN1</Line>
         <Line>WAIT1</Line>
@@ -402,7 +408,7 @@
     </GenFiles>
     <SignalListFile>Documentation\ROBO_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>92</ProjectModificationStamp>
+    <ProjectModificationStamp>93</ProjectModificationStamp>
   </Options>
   <CpuID_260>
     <Generated>true</Generated>
@@ -411,7 +417,7 @@
     <GenDriverVersion>01.04</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1228833593</HeaderAge>
-    <CodeAge>1228833593</CodeAge>
+    <CodeAge>1229354579</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>14</GenNumMethods>
     <SetClockConfiguration>false</SetClockConfiguration>
@@ -701,61 +707,216 @@
     </InhrCompID_6>
   </ComponentID_5>
   <ComponentID_7>
-    <Generated>false</Generated>
-    <GenCompName />
-    <GenComponentVersion>??.???</GenComponentVersion>
-    <GenDriverVersion>??.??</GenDriverVersion>
+    <Generated>true</Generated>
+    <GenCompName>LEDPin2</GenCompName>
+    <GenComponentVersion>02.086</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>-1</HeaderAge>
-    <CodeAge>-1</CodeAge>
+    <HeaderAge>1229354579</HeaderAge>
+    <CodeAge>1229354579</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>11</GenNumMethods>
     <GetDir>false</GetDir>
     <SetDir>false</SetDir>
     <SetInput>false</SetInput>
     <SetOutput>false</SetOutput>
-    <GetVal>false</GetVal>
-    <PutVal>false</PutVal>
-    <ClrVal>false</ClrVal>
-    <SetVal>false</SetVal>
-    <NegVal>false</NegVal>
+    <GetVal>true</GetVal>
+    <PutVal>true</PutVal>
+    <ClrVal>true</ClrVal>
+    <SetVal>true</SetVal>
+    <NegVal>true</NegVal>
     <ConnectPin>false</ConnectPin>
     <GetRawVal>false</GetRawVal>
     <GenNumEvents>0</GenNumEvents>
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-    <GenMethodPos>0</GenMethodPos>
+    <GenMethodPos>10</GenMethodPos>
+    <MethodPos>
+      <MethodPos0>GetVal</MethodPos0>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>102</LineBeg>
+      <LineEnd>120</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos1>PutVal</MethodPos1>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>121</LineBeg>
+      <LineEnd>135</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos2>ClrVal</MethodPos2>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>136</LineBeg>
+      <LineEnd>146</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos3>SetVal</MethodPos3>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>147</LineBeg>
+      <LineEnd>157</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos4>NegVal</MethodPos4>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>158</LineBeg>
+      <LineEnd>168</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos5>GetVal</MethodPos5>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>88</LineBeg>
+      <LineEnd>110</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos6>PutVal</MethodPos6>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>111</LineBeg>
+      <LineEnd>129</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos7>ClrVal</MethodPos7>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>130</LineBeg>
+      <LineEnd>144</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos8>SetVal</MethodPos8>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>145</LineBeg>
+      <LineEnd>159</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos9>NegVal</MethodPos9>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>160</LineBeg>
+      <LineEnd>174</LineEnd>
+    </MethodPos>
     <GenExtraFilesCount>0</GenExtraFilesCount>
     <InhrCompID_8>
-      <Generated>false</Generated>
-      <GenCompName />
-      <GenComponentVersion>??.???</GenComponentVersion>
-      <GenDriverVersion>??.??</GenDriverVersion>
+      <Generated>true</Generated>
+      <GenCompName>BitIoLdd2</GenCompName>
+      <GenComponentVersion>01.033</GenComponentVersion>
+      <GenDriverVersion>01.03</GenDriverVersion>
       <GenEventModule />
-      <HeaderAge>-1</HeaderAge>
-      <CodeAge>-1</CodeAge>
+      <HeaderAge>1229354579</HeaderAge>
+      <CodeAge>1229354579</CodeAge>
       <AsemblAge>-1</AsemblAge>
       <GenNumMethods>13</GenNumMethods>
-      <Init>false</Init>
+      <Init>true</Init>
       <Deinit>false</Deinit>
       <GetDir>false</GetDir>
       <SetDir>false</SetDir>
       <SetInput>false</SetInput>
       <SetOutput>false</SetOutput>
-      <GetVal>false</GetVal>
-      <PutVal>false</PutVal>
-      <ClrVal>false</ClrVal>
-      <SetVal>false</SetVal>
-      <NegVal>false</NegVal>
+      <GetVal>true</GetVal>
+      <PutVal>true</PutVal>
+      <ClrVal>true</ClrVal>
+      <SetVal>true</SetVal>
+      <NegVal>true</NegVal>
       <ConnectPin>false</ConnectPin>
       <GetRawVal>false</GetRawVal>
       <GenNumEvents>0</GenNumEvents>
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-      <GenMethodPos>0</GenMethodPos>
-      <GenExtraFilesCount>0</GenExtraFilesCount>
+      <GenMethodPos>12</GenMethodPos>
+      <MethodPos>
+        <MethodPos0>Init</MethodPos0>
+        <MethodType>method</MethodType>
+        <ModuleType>Header</ModuleType>
+        <LineBeg>125</LineBeg>
+        <LineEnd>148</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos1>GetVal</MethodPos1>
+        <MethodType>method</MethodType>
+        <ModuleType>Header</ModuleType>
+        <LineBeg>149</LineBeg>
+        <LineEnd>170</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos2>PutVal</MethodPos2>
+        <MethodType>method</MethodType>
+        <ModuleType>Header</ModuleType>
+        <LineBeg>171</LineBeg>
+        <LineEnd>196</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos3>ClrVal</MethodPos3>
+        <MethodType>method</MethodType>
+        <ModuleType>Header</ModuleType>
+        <LineBeg>197</LineBeg>
+        <LineEnd>212</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos4>SetVal</MethodPos4>
+        <MethodType>method</MethodType>
+        <ModuleType>Header</ModuleType>
+        <LineBeg>213</LineBeg>
+        <LineEnd>228</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos5>NegVal</MethodPos5>
+        <MethodType>method</MethodType>
+        <ModuleType>Header</ModuleType>
+        <LineBeg>229</LineBeg>
+        <LineEnd>244</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos6>Init</MethodPos6>
+        <MethodType>method</MethodType>
+        <ModuleType>Code</ModuleType>
+        <LineBeg>97</LineBeg>
+        <LineEnd>146</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos7>GetVal</MethodPos7>
+        <MethodType>method</MethodType>
+        <ModuleType>Code</ModuleType>
+        <LineBeg>147</LineBeg>
+        <LineEnd>175</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos8>PutVal</MethodPos8>
+        <MethodType>method</MethodType>
+        <ModuleType>Code</ModuleType>
+        <LineBeg>176</LineBeg>
+        <LineEnd>209</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos9>ClrVal</MethodPos9>
+        <MethodType>method</MethodType>
+        <ModuleType>Code</ModuleType>
+        <LineBeg>210</LineBeg>
+        <LineEnd>229</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos10>SetVal</MethodPos10>
+        <MethodType>method</MethodType>
+        <ModuleType>Code</ModuleType>
+        <LineBeg>230</LineBeg>
+        <LineEnd>249</LineEnd>
+      </MethodPos>
+      <MethodPos>
+        <MethodPos11>NegVal</MethodPos11>
+        <MethodType>method</MethodType>
+        <ModuleType>Code</ModuleType>
+        <LineBeg>250</LineBeg>
+        <LineEnd>269</LineEnd>
+      </MethodPos>
+      <GenExtraFilesCount>1</GenExtraFilesCount>
+      <ExtraFile0>Documentation\doxygen\BitIoLdd2_component.txt</ExtraFile0>
     </InhrCompID_8>
   </ComponentID_7>
   <ComponentID_33>
@@ -921,6 +1082,7 @@
       <OnInterrupt_Selected>1</OnInterrupt_Selected>
       <OnInterrupt_Name>EInt1_OnInterrupt</OnInterrupt_Name>
       <OnInterrupt_Priority>interrupts disabled</OnInterrupt_Priority>
+      <ISR_IntISRHandle />
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1066,6 +1228,10 @@
       <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
       <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
       <OnRxActiveEdge_Priority>interrupts disabled</OnRxActiveEdge_Priority>
+      <ISR_InpIntISRHandle />
+      <ISR_OutIntISRHandle />
+      <ISR_ErrIntISRHandle />
+      <ISR_IdleIntISRHandle />
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1363,6 +1529,10 @@
         <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
         <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
         <OnRxActiveEdge_Priority>interrupts disabled</OnRxActiveEdge_Priority>
+        <ISR_InpIntISRHandle />
+        <ISR_OutIntISRHandle />
+        <ISR_ErrIntISRHandle />
+        <ISR_IdleIntISRHandle />
         <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
         <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
         <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1431,6 +1601,8 @@
     <OnChannel7_Selected>1</OnChannel7_Selected>
     <OnChannel7_Name>TU1_OnChannel7</OnChannel7_Name>
     <OnChannel7_Priority>interrupts disabled</OnChannel7_Priority>
+    <ISR_CounterIntISRHandle />
+    <ISR_ModuloIntISRHandle />
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -1843,6 +2015,10 @@
         <OnRxActiveEdge_Selected>1</OnRxActiveEdge_Selected>
         <OnRxActiveEdge_Name>AS2_OnRxActiveEdge</OnRxActiveEdge_Name>
         <OnRxActiveEdge_Priority>interrupts disabled</OnRxActiveEdge_Priority>
+        <ISR_InpIntISRHandle />
+        <ISR_OutIntISRHandle />
+        <ISR_ErrIntISRHandle />
+        <ISR_IdleIntISRHandle />
         <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
         <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
         <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -2023,6 +2199,7 @@
       <AsemblAge>-1</AsemblAge>
       <GenNumMethods>0</GenNumMethods>
       <GenNumEvents>0</GenNumEvents>
+      <ISR_Handle />
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -2090,6 +2267,8 @@
     <OnChannel7_Selected>1</OnChannel7_Selected>
     <OnChannel7_Name>TU1_OnChannel7</OnChannel7_Name>
     <OnChannel7_Priority>interrupts disabled</OnChannel7_Priority>
+    <ISR_CounterIntISRHandle />
+    <ISR_ModuloIntISRHandle />
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -2386,6 +2565,8 @@
     <OnChannel7_Selected>1</OnChannel7_Selected>
     <OnChannel7_Name>TU2_OnChannel7</OnChannel7_Name>
     <OnChannel7_Priority>interrupts disabled</OnChannel7_Priority>
+    <ISR_CounterIntISRHandle />
+    <ISR_ModuloIntISRHandle />
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -2884,7 +3065,7 @@
         <GenExtraFilesCount>0</GenExtraFilesCount>
       </InhrCompID_81>
     </InhrCompID_79>
-    <InhrCompID_292>
+    <InhrCompID_297>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -2910,8 +3091,8 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_292>
-    <InhrCompID_293>
+    </InhrCompID_297>
+    <InhrCompID_298>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -2938,7 +3119,7 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_293>
+    </InhrCompID_298>
   </ComponentID_77>
   <ComponentID_84>
     <Generated>false</Generated>
@@ -3084,7 +3265,7 @@
         <GenExtraFilesCount>0</GenExtraFilesCount>
       </InhrCompID_88>
     </InhrCompID_86>
-    <InhrCompID_294>
+    <InhrCompID_299>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -3110,8 +3291,8 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_294>
-    <InhrCompID_295>
+    </InhrCompID_299>
+    <InhrCompID_300>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -3138,7 +3319,7 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_295>
+    </InhrCompID_300>
   </ComponentID_84>
   <ComponentID_61>
     <Generated>false</Generated>
@@ -3200,6 +3381,14 @@
     <OnChannel7_Selected>1</OnChannel7_Selected>
     <OnChannel7_Name>TU2_OnChannel7</OnChannel7_Name>
     <OnChannel7_Priority>interrupts disabled</OnChannel7_Priority>
+    <ISR_CounterIntISRHandle />
+    <ISR_ModuloIntISRHandle />
+    <ISR_ChannelCmpIntISRHandle0 />
+    <ISR_ChannelCapIntISRHandle0 />
+    <ISR_ChannelCmpIntISRHandle1 />
+    <ISR_ChannelCapIntISRHandle1 />
+    <ISR_ChannelCmpIntISRHandle2 />
+    <ISR_ChannelCapIntISRHandle2 />
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -3615,6 +3804,8 @@
     <OnChannel7_Selected>1</OnChannel7_Selected>
     <OnChannel7_Name>TU2_OnChannel7</OnChannel7_Name>
     <OnChannel7_Priority>interrupts disabled</OnChannel7_Priority>
+    <ISR_CounterIntISRHandle />
+    <ISR_ModuloIntISRHandle />
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -3871,6 +4062,7 @@
         <OnInterrupt_Selected>1</OnInterrupt_Selected>
         <OnInterrupt_Name>EInt1_OnInterrupt</OnInterrupt_Name>
         <OnInterrupt_Priority>interrupts disabled</OnInterrupt_Priority>
+        <ISR_IntISRHandle />
         <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
         <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
         <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -3983,6 +4175,8 @@
       <OnError_Selected>1</OnError_Selected>
       <OnError_Name>SM2_OnError</OnError_Name>
       <OnError_Priority>interrupts disabled</OnError_Priority>
+      <ISR_InpIntISRHandle />
+      <ISR_OutIntISRHandle />
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -4094,6 +4288,8 @@
       <OnError_Selected>1</OnError_Selected>
       <OnError_Name>FLASH1_OnError</OnError_Name>
       <OnError_Priority>interrupts disabled</OnError_Priority>
+      <ISR_InterruptVectorISRHandle />
+      <ISR_ReadCollisionErrorInterruptISRHandle />
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
@@ -4249,7 +4445,7 @@
         <GenExtraFilesCount>0</GenExtraFilesCount>
       </InhrCompID_274>
     </InhrCompID_272>
-    <InhrCompID_296>
+    <InhrCompID_301>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -4270,7 +4466,7 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_296>
+    </InhrCompID_301>
     <InhrCompID_271>
       <Generated>false</Generated>
       <GenCompName />

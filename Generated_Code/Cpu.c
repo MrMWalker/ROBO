@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K22P144M100SF5RM, Rev.2, Apr 2013
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-09-30, 16:25, # CodeGen: 0
+**     Date/Time   : 2016-10-06, 14:50, # CodeGen: 1
 **     Abstract    :
 **
 **     Settings    :
@@ -312,6 +312,8 @@
 /* {Default RTOS Adapter} No RTOS includes */
 #include "LEDPin1.h"
 #include "BitIoLdd1.h"
+#include "LEDPin2.h"
+#include "BitIoLdd2.h"
 #include "UTIL1.h"
 #include "KIN1.h"
 #include "WAIT1.h"
@@ -577,6 +579,8 @@ void PE_low_level_init(void)
   NVICIP20 = NVIC_IP_PRI20(0x00);
   /* ### BitIO_LDD "BitIoLdd1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd1_Init(NULL);
+  /* ### BitIO_LDD "BitIoLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)BitIoLdd2_Init(NULL);
   /* ### KinetisSDK "KSDK1" init code ... */
   /* Write code here ... */
   /* ### KinetisTools "KIN1" init code ... */
