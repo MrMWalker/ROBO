@@ -45,7 +45,7 @@
       <File Name="Static_Code/PDD/LPTMR_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407486" FileType="1048576" />
       <File Name="Static_Code/PDD/ADC_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407385" FileType="1048576" />
       <File Name="Static_Code/PDD/DAC_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407417" FileType="1048576" />
-      <File Name="Documentation/ROBO_SIGNALS.txt" FileDate="2016-10-06, 14:50:39" FileAge="1475758239443" FileType="3072" />
+      <File Name="Documentation/ROBO_SIGNALS.txt" FileDate="2016-10-07, 14:19:50" FileAge="1475842790714" FileType="3072" />
       <File Name="Static_Code/PDD/SAI_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407547" FileType="1048576" />
       <File Name="Static_Code/PDD/DMA_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407434" FileType="1048576" />
       <File Name="Generated_Code/LEDPin2.h" FileDate="2016-10-06, 14:50:39" FileAge="1475758239084" FileType="45637" CompNumb="7" />
@@ -82,8 +82,8 @@
       <File Name="Static_Code/PDD/RTC_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407537" FileType="1048576" />
       <File Name="Sources/Events.h" FileDate="2016-10-06, 14:50:39" FileAge="1475758239381" FileType="131328" />
       <File Name="Static_Code/PDD/MCG_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407495" FileType="1048576" />
-      <File Name="Generated_Code/BitIoLdd2.h" FileDate="2016-10-06, 14:50:39" FileAge="1475758239150" FileType="45637" CompNumb="8" />
       <File Name="Sources/Events.c" FileDate="2016-09-23, 15:46:47" FileAge="1474638407350" FileType="131328" />
+      <File Name="Generated_Code/BitIoLdd2.h" FileDate="2016-10-06, 14:50:39" FileAge="1475758239150" FileType="45637" CompNumb="8" />
       <File Name="Static_Code/PDD/CRC_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407411" FileType="1048576" />
       <File Name="Static_Code/PDD/FMC_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407452" FileType="1048576" />
       <File Name="Generated_Code/Vectors.c" FileDate="2016-10-06, 14:50:39" FileAge="1475758239356" FileType="45637" CompNumb="260" />
@@ -91,15 +91,15 @@
       <File Name="Generated_Code/BitIoLdd1.h" FileDate="2016-09-30, 16:25:51" FileAge="1475245551974" FileType="45637" CompNumb="6" />
       <File Name="Static_Code/PDD/VREF_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407612" FileType="1048576" />
       <File Name="Generated_Code/BitIoLdd1.c" FileDate="2016-09-30, 16:25:51" FileAge="1475245551953" FileType="45637" CompNumb="6" />
-      <File Name="Static_Code/PDD/FTFE_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407461" FileType="1048576" />
       <File Name="Static_Code/PDD/OSC_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407506" FileType="1048576" />
-      <File Name="Static_Code/PDD/UART_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407589" FileType="1048576" />
-      <File Name="Static_Code/PDD/CAN_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407392" FileType="1048576" />
+      <File Name="Static_Code/PDD/FTFE_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407461" FileType="1048576" />
       <File Name="Documentation/ROBO_Settings.xml" FileDate="2016-10-06, 14:50:39" FileAge="1475758239782" FileType="3072" />
+      <File Name="Static_Code/PDD/CAN_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407392" FileType="1048576" />
+      <File Name="Static_Code/PDD/UART_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407589" FileType="1048576" />
       <File Name="Documentation/doxygen/ROBO_project.txt" FileDate="2016-10-06, 14:50:39" FileAge="1475758239301" FileType="45637" CompNumb="260" />
       <File Name="Static_Code/PDD/SysTick_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407582" FileType="1048576" />
       <File Name="Static_Code/PDD/USB_PDD.h" FileDate="2016-09-23, 15:46:47" FileAge="1474638407606" FileType="1048576" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>2</CodeGenReference>
+  <CodeGenReference>3</CodeGenReference>
 </CodeGenerationInfo>

@@ -20,7 +20,7 @@ C_DEPS += \
 Sources/%.o: ../Sources/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/M&M/Documents/INTRO/ROBO/Static_Code/PDD" -I"C:/Users/M&M/Documents/INTRO/ROBO/Static_Code/IO_Map" -I"C:/Users/M&M/Documents/INTRO/ROBO/Sources" -I"C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code" -I../../INTRO_Common -std=c99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -Wall  -g3 -I"C:/Users/M&M/Documents/INTRO/ROBO/Static_Code/PDD" -I"C:/Users/M&M/Documents/INTRO/ROBO/Static_Code/IO_Map" -I"C:/Users/M&M/Documents/INTRO/ROBO/Sources" -I"C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code" -I../../INTRO_Common -std=c99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
