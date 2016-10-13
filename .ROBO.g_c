@@ -408,7 +408,7 @@
     </GenFiles>
     <SignalListFile>Documentation\ROBO_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>93</ProjectModificationStamp>
+    <ProjectModificationStamp>94</ProjectModificationStamp>
   </Options>
   <CpuID_260>
     <Generated>true</Generated>
@@ -3065,7 +3065,7 @@
         <GenExtraFilesCount>0</GenExtraFilesCount>
       </InhrCompID_81>
     </InhrCompID_79>
-    <InhrCompID_302>
+    <InhrCompID_307>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -3091,8 +3091,8 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_302>
-    <InhrCompID_303>
+    </InhrCompID_307>
+    <InhrCompID_308>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -3119,7 +3119,7 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_303>
+    </InhrCompID_308>
   </ComponentID_77>
   <ComponentID_84>
     <Generated>false</Generated>
@@ -3265,7 +3265,7 @@
         <GenExtraFilesCount>0</GenExtraFilesCount>
       </InhrCompID_88>
     </InhrCompID_86>
-    <InhrCompID_304>
+    <InhrCompID_309>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -3291,8 +3291,8 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_304>
-    <InhrCompID_305>
+    </InhrCompID_309>
+    <InhrCompID_310>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -3319,7 +3319,7 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_305>
+    </InhrCompID_310>
   </ComponentID_84>
   <ComponentID_61>
     <Generated>false</Generated>
@@ -4445,7 +4445,7 @@
         <GenExtraFilesCount>0</GenExtraFilesCount>
       </InhrCompID_274>
     </InhrCompID_272>
-    <InhrCompID_306>
+    <InhrCompID_311>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -4466,7 +4466,7 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_306>
+    </InhrCompID_311>
     <InhrCompID_271>
       <Generated>false</Generated>
       <GenCompName />

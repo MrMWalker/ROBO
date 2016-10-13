@@ -1772,12 +1772,11 @@ push-pull
           <Enabled v="N" />
           <Properties>
             <Component_name v="TimerIntLdd1" />
-            <Periodic_interrupt_source v="" />
+            <Periodic_interrupt_source v="FTM0_MOD" />
             <Counter v="FTM0_CNT" />
             <boolgroup name="Interrupt service/event" v="Enabled">
-              <Interrupt v="" />
+              <Interrupt v="INT_FTM0" />
               <Interrupt_priority v="medium priority" />
-              <Interrupt_preserve_registers v="yes" />
             </boolgroup>
             <Interrupt_period v="1 ms" />
             <group name="Initialization">

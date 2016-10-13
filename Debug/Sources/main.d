@@ -28,7 +28,8 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/KIN1.h \
  C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/UTIL1.h \
  ../../INTRO_Common/Application.h ../../INTRO_Common/Platform.h \
- C:/Users/M&M/Documents/INTRO/ROBO/Sources/Platform_Local.h
+ C:/Users/M&M/Documents/INTRO/ROBO/Sources/Platform_Local.h \
+ ../../INTRO_Common/Event.h
 
 C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/Cpu.h:
 
@@ -91,3 +92,5 @@ C:/Users/M&M/Documents/INTRO/ROBO/Generated_Code/UTIL1.h:
 ../../INTRO_Common/Platform.h:
 
 C:/Users/M&M/Documents/INTRO/ROBO/Sources/Platform_Local.h:
+
+../../INTRO_Common/Event.h:
